@@ -3,7 +3,7 @@
 <h2>Build from Source</h2>
 
 <p>
-    using <strong>cl</strong> from <strong>MSVC</strong> on <strong>Windows</strong>:<br>
+    <h6>using <strong>cl</strong> from <strong>MSVC</strong> on <strong>Windows</strong>:</h6><br>
     link ws2_32.lib (static libs on windows are named *.lib)<br>
     run: <code>cl main.c /link ws2_32.lib</code><br>
 </p>
