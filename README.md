@@ -1,5 +1,3 @@
-<h1>C-Web-Server</h1>
-
 <h2>Build from Source</h2>
 
 <p>
