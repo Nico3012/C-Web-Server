@@ -17,7 +17,7 @@
 </p>
 
 <p>
-    using <strong>gcc</strong> on <strong>Unix-like systems</strong>:<br>
+    using <strong>gcc</strong> on <strong>Unix-like systems e.g. Linux</strong>:<br>
     sys/socket.h and netinet/in.h are included in the libc library, which is linked by default, so you don’t need to explicitly link any additional libraries when compiling on Unix-like systems.<br>
     run: <code>gcc main.c</code><br>
 </p>
