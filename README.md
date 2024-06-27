@@ -21,3 +21,19 @@
     sys/socket.h and netinet/in.h are included in the libc library, which is linked by default, so you don’t need to explicitly link any additional libraries when compiling on Unix-like systems.<br>
     run: <code>gcc main.c</code><br>
 </p>
+
+<h2>Install Compiler</h2>
+
+<p>
+    Install <strong>cl</strong> from <strong>MSVC</strong> on <strong>Windows</strong>:<br>
+    If you have a recent version of Visual Studio, open the Visual Studio Installer from the Windows Start menu and verify that the C++ workload is checked. If it's not installed, then check the box and select the <strong>Modify</strong> button in the installer.<br>
+    You can also install the <strong>Desktop development with C++</strong> workload without a full Visual Studio IDE installation. From the Visual Studio <a href="https://visualstudio.microsoft.com/downloads/">Downloads</a> page, scroll down until you see <strong>Tools for Visual Studio</strong> under the <strong>All Downloads</strong> section and select the download for <strong>Build Tools for Visual Studio</strong>.<br>
+</p>
+
+<p>
+    Install <strong>gcc</strong> from <strong>MinGW</strong> on <strong>Windows</strong>:<br>
+</p>
+
+<p>
+    Install <strong>gcc</strong> on <strong>Unix-like systems</strong> e.g. <strong>Linux</strong>:<br>
+</p>
