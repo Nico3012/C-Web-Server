@@ -1,8 +1,10 @@
-#ifdef _WIN32 // WinSock
+#ifdef _WIN32
+    /* Windows-specific includes */
     // winsock2.h must be included before windows.h | Windows.h
     // windows.h | Windows.h is not needed in this project
     #include <winsock2.h>
-#else // POSIX
+#else
+    /* Unix-specific includes */
     #include <sys/socket.h>
     #include <netinet/in.h>
 #endif
@@ -39,7 +41,7 @@ int main()
         addr.sin_family = AF_INET;
         addr.sin_addr.s_addr = inet_addr("127.0.0.1"); // inet_addr("127.0.0.1") | 0
         addr.sin_port = htons(80);
-        
+
         // Use bind function and check for errors
         if (bind(serverSocket, &addr, sizeof(addr)) == SOCKET_ERROR) {
             printf("bind() failed!");
