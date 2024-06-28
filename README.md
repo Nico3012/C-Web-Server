@@ -16,8 +16,14 @@
 
 <p>
     <h6>using gcc on Unix-like systems e.g. Linux:</h6>
-    sys/socket.h and netinet/in.h are included in the libc library, which is linked by default, so you don’t need to explicitly link any additional libraries when compiling on Unix-like systems.<br>
+    sys/socket.h and netinet/in.h are included in the libc library, which is linked by default, so you don’t need to explicitly link any additional libraries.<br>
     run: <code>gcc main.c</code><br>
+</p>
+
+<p>
+    <h6>using clang on macOS:</h6>
+    sys/socket.h and netinet/in.h are included in the system’s standard libraries, which is linked by default, so you don’t need to explicitly link any additional libraries.<br>
+    run: <code>clang main.c</code><br>
 </p>
 
 <h2>Install Compiler</h2>
