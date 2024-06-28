@@ -3,7 +3,7 @@
 <p>
     <h6>using cl from MSVC on Windows:</h6>
     link ws2_32.lib (static libs on windows are named *.lib)<br>
-    run: <code>cl main.c /link ws2_32.lib</code><br>
+    <strong>run:</strong> <code>cl main.c /link ws2_32.lib</code><br>
 </p>
 
 <p>
@@ -11,19 +11,19 @@
     link libws2_32.a (static libs on linux are named lib*.a)<br>
     MinGW ports the GNU Compiler Collection from Linux to Windows. Therefore, static libs are named lib*.a<br>
     The <code>-l ws2_32</code> flag adds lib*.a itself and would therefore do the same as <code>-l:libws2_32.a</code>.<br>
-    run: <code>gcc main.c -l:libws2_32.a</code><br>
+    <strong>run:</strong> <code>gcc main.c -l:libws2_32.a</code><br>
 </p>
 
 <p>
     <h6>using gcc on Unix-like systems e.g. Linux:</h6>
     sys/socket.h and netinet/in.h are included in the libc library, which is linked by default, so you don’t need to explicitly link any additional libraries.<br>
-    run: <code>gcc main.c</code><br>
+    <strong>run:</strong> <code>gcc main.c</code><br>
 </p>
 
 <p>
     <h6>using clang on macOS:</h6>
     sys/socket.h and netinet/in.h are included in the system’s standard libraries, which is linked by default, so you don’t need to explicitly link any additional libraries.<br>
-    run: <code>clang main.c</code><br>
+    <strong>run:</strong> <code>clang main.c</code><br>
 </p>
 
 <h2>Install Compiler</h2>
@@ -41,5 +41,5 @@
 <p>
     <h6>Install gcc on Unix-like systems e.g. Linux:</h6>
     For Debian based Linux distributions, gcc can be installed via the <code>apt</code> package manager.<br>
-    run: <code>apt install gcc</code><br>
+    <strong>run:</strong> <code>apt install gcc</code><br>
 </p>
