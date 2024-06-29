@@ -55,7 +55,7 @@ int main()
     #ifdef _WIN32
         listen(s, 10); // ten is the number of connections that can wait until we are rejecting new connections
     #else
-        listen(s, 10) // ten is the number of connections that can wait until we are rejecting new connections
+        listen(s, 10); // ten is the number of connections that can wait until we are rejecting new connections
     #endif
 
     printf("listend\n");
@@ -73,8 +73,8 @@ int main()
             send(c, httpResponse, strlen(httpResponse), 0);
         #else
             write(c, httpResponse, strlen(httpResponse));
-            close(c);
-            close(s);
+            // close(c);
+            // close(s);
         #endif
     }
 
