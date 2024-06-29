@@ -1,3 +1,6 @@
+// all errors are named with the function name and error added in PascalCase or CamelCase!
+// if a error exists, the error code will be thrown to the console with the error variable name and 1 is returned!
+
 #ifdef _WIN32
     // Windows-specific includes
     // winsock2.h must be included before windows.h | Windows.h
@@ -17,11 +20,50 @@ int main()
 {
     char *httpResponse = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
 
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////
+    // FINAL (below) ////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
     // init winsocket in windown with version 2.2
+    // also errors are handled
     #ifdef _WIN32
+        WORD wVersionRequested = MAKEWORD(2, 2);
         WSADATA wsaData;
-        WSAStartup(MAKEWORD(2, 2), &wsaData);
+        int WSAStartupError = WSAStartup(wVersionRequested, &wsaData);
+        if (WSAStartupError != 0) {
+            printf("WSAStartupError: %d\n", WSAStartupError);
+            return 1;
+        }
+
+        //check version:
+        if (LOBYTE(wsaData.wVersion) != 2 || HIBYTE(wsaData.wVersion) != 2) {
+            printf("Could not find a usable version of Winsock.dll\n");
+
+            // stop usage of Winsock 2-DLL
+            int WSACleanupError = WSACleanup();
+            if (WSACleanupError == SOCKET_ERROR) {
+                int WSACleanupErrorCode = WSAGetLastError();
+                printf("WSACleanupError: %d\n", WSACleanupErrorCode);
+            }
+
+            return 1;
+        }
     #endif
+
+    /////////////////////////////////////////////////////////////////////////////
+    // FINAL (above) ////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 
     // create socket and store it in s variable
     // create client variable c
@@ -70,6 +112,39 @@ int main()
             send(c, httpResponse, strlen(httpResponse), 0);
         #endif
     }
+
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////
+    // FINAL (below) ////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+    // stop usage of Winsock 2-DLL
+    #ifdef _WIN32
+        int WSACleanupError = WSACleanup();
+        if (WSACleanupError == SOCKET_ERROR) {
+            int WSACleanupErrorCode = WSAGetLastError();
+            printf("WSACleanupError: %d\n", WSACleanupErrorCode);
+            return 1;
+        }
+    #endif
+
+    /////////////////////////////////////////////////////////////////////////////
+    // FINAL (above) ////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
 
     return 0;
 }
