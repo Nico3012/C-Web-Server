@@ -1,63 +1,82 @@
 #ifdef _WIN32
-    /* Windows-specific includes */
+    // Windows-specific includes
     // winsock2.h must be included before windows.h | Windows.h
     // windows.h | Windows.h is not needed in this project
     #include <winsock2.h>
 #else
-    /* Unix-specific includes */
+    // Unix-specific includes
     #include <sys/socket.h>
     #include <netinet/in.h>
 #endif
 
+// imports from c default library
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
+    char *httpResponse = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
+
+    // init winsocket in windown with version 2.2
     #ifdef _WIN32
-        // Initialize WSA variables
         WSADATA wsaData;
-        int wsaerr = WSAStartup(MAKEWORD(2, 2), &wsaData);
+        WSAStartup(MAKEWORD(2, 2), &wsaData);
+    #endif
 
-        // Check for initialization errors
-        if (wsaerr != 0) {
-            printf("ws2_32.dll was not found!");
-            return 1;
-        }
+    printf("initialized\n");
 
-        // Create a socket
-        SOCKET serverSocket;
-        serverSocket = INVALID_SOCKET;
-        serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    // create socket and store it in s variable
+    #ifdef _WIN32
+        SOCKET s = socket(AF_INET, SOCK_STREAM, 0);
+    #else
+        int s = socket(AF_INET, SOCK_STREAM, 0);
+    #endif
 
-        // Check for socket creation error
-        if (serverSocket == INVALID_SOCKET) {
-            printf("creating serverSocket failed!");
-            WSACleanup();
-            return 1;
-        }
+    printf("created socket\n");
 
-        // Bind the socket to an IP address and port number
+    // bind socket
+    #ifdef _WIN32
         struct sockaddr_in addr;
         addr.sin_family = AF_INET;
-        addr.sin_addr.s_addr = inet_addr("127.0.0.1"); // inet_addr("127.0.0.1") | 0
-        addr.sin_port = htons(80);
-
-        // Use bind function and check for errors
-        if (bind(serverSocket, &addr, sizeof(addr)) == SOCKET_ERROR) {
-            printf("bind() failed!");
-            return 1;
-        }
-
-        // Listen for incoming connections and check for errors
-        if (listen(serverSocket, 1) == SOCKET_ERROR) {
-            printf("listen() function failed! Error listening on socket!");
-            return 1;
-        }
-
-        // Accept incoming connections
-        SOCKET acceptSocket;
-        acceptSocket = accept(serverSocket, 0, 0);
+        addr.sin_addr.s_addr = 0; // use all local interfaces
+        addr.sin_port = htons(8080);
+        bind(s, (struct sockaddr *)&addr, sizeof(addr));
+    #else
+        struct sockaddr_in addr = {
+            AF_INET,
+            0x901f // port number in opposite direction (8080)
+        };
+        bind(s, &addr, sizeof(addr));
     #endif
+
+    printf("binded\n");
+
+    // listen socket
+    #ifdef _WIN32
+        listen(s, 10); // ten is the number of connections that can wait until we are rejecting new connections
+    #else
+        listen(s, 10) // ten is the number of connections that can wait until we are rejecting new connections
+    #endif
+
+    printf("listend\n");
+
+    while (1) {
+        // accept client socket
+        #ifdef _WIN32
+            SOCKET c = accept(s, 0, 0);
+        #else
+            int c = accept(s, 0, 0);
+        #endif
+
+        // send data
+        #ifdef _WIN32
+            send(c, httpResponse, strlen(httpResponse), 0);
+        #else
+            write(c, httpResponse, strlen(httpResponse));
+            close(c);
+            close(s);
+        #endif
+    }
 
     return 0;
 }
