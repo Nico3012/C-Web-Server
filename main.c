@@ -23,8 +23,6 @@ int main()
         WSAStartup(MAKEWORD(2, 2), &wsaData);
     #endif
 
-    printf("initialized\n");
-
     // create socket and store it in s variable
     // create client variable c
     #ifdef _WIN32
@@ -34,8 +32,6 @@ int main()
         int s = socket(AF_INET, SOCK_STREAM, 0);
         int c;
     #endif
-
-    printf("created socket\n");
 
     // bind socket
     #ifdef _WIN32
@@ -52,16 +48,12 @@ int main()
         bind(s, (struct sockaddr *)&addr, sizeof(addr));
     #endif
 
-    printf("binded\n");
-
     // listen socket
     #ifdef _WIN32
         listen(s, 10); // ten is the number of connections that can wait until we are rejecting new connections
     #else
         listen(s, 10); // ten is the number of connections that can wait until we are rejecting new connections
     #endif
-
-    printf("listend\n");
 
     while (1) {
         // accept client socket
@@ -75,9 +67,7 @@ int main()
         #ifdef _WIN32
             send(c, httpResponse, strlen(httpResponse), 0);
         #else
-            write(c, httpResponse, strlen(httpResponse));
-            // close(c);
-            // close(s);
+            send(c, httpResponse, strlen(httpResponse), 0);
         #endif
     }
 
