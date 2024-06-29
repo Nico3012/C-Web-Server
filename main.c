@@ -26,10 +26,13 @@ int main()
     printf("initialized\n");
 
     // create socket and store it in s variable
+    // create client variable c
     #ifdef _WIN32
         SOCKET s = socket(AF_INET, SOCK_STREAM, 0);
+        SOCKET c;
     #else
         int s = socket(AF_INET, SOCK_STREAM, 0);
+        int c;
     #endif
 
     printf("created socket\n");
@@ -63,9 +66,9 @@ int main()
     while (1) {
         // accept client socket
         #ifdef _WIN32
-            SOCKET c = accept(s, 0, 0);
+            c = accept(s, 0, 0);
         #else
-            int c = accept(s, 0, 0);
+            c = accept(s, 0, 0);
         #endif
 
         // send data

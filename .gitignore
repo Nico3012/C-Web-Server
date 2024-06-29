@@ -1,0 +1,9 @@
+# cl on Windows
+main.obj
+main.exe
+
+# gcc on windows
+a.exe
+
+# gcc and clang on Unix-like systems
+a.out
