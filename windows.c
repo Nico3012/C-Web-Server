@@ -5,7 +5,7 @@
 
 int main()
 {
-    // init Winsock 2.2
+    // init Winsock 2.2:
     WORD wVersionRequested = MAKEWORD(2, 2);
     WSADATA wsaData;
     int WSAStartupError = WSAStartup(wVersionRequested, &wsaData);
@@ -31,9 +31,28 @@ int main()
         return 1;
     }
 
+    // create tcp socket:
+    SOCKET sock = INVALID_SOCKET;
+    sock = socket(AF_INET, SOCK_STREAM, 6);
+    if (sock == INVALID_SOCKET)
+    {
+        int socketErrorCode = WSAGetLastError();
+        printf("socketError: %d\n", socketErrorCode);
 
+        // stop usage of Winsock 2-DLL
+        int WSACleanupError = WSACleanup();
+        if (WSACleanupError == SOCKET_ERROR)
+        {
+            int WSACleanupErrorCode = WSAGetLastError();
+            printf("WSACleanupError: %d\n", WSACleanupErrorCode);
+        }
 
-    // stop usage of Winsock 2-DLL
+        return 1;
+    }
+
+    // bind socket:
+
+    // stop usage of Winsock 2-DLL:
     int WSACleanupError = WSACleanup();
     if (WSACleanupError == SOCKET_ERROR)
     {
