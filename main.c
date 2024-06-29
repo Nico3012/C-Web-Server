@@ -49,7 +49,7 @@ int main()
             AF_INET,
             0x901f // port number in opposite direction (8080)
         };
-        bind(s, &addr, sizeof(addr));
+        bind(s, (struct sockaddr *)&addr, sizeof(addr));
     #endif
 
     printf("binded\n");
