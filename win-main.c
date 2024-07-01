@@ -4,6 +4,27 @@
 
 #define DEFAULT_BUFLEN 512
 
+/* agenda *//*
+
+init API
+create socket
+bind socket
+listen on socket
+while {
+    accept client
+    while {
+        receive data
+    }
+    shutdown receiving
+    send data to client
+    shutdown sending
+    close client
+}
+close socket
+release API
+
+*/
+
 int main()
 {
     char *httpResponse = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
