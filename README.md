@@ -43,3 +43,19 @@
     For Debian based Linux distributions, gcc can be installed via the <code>apt</code> package manager.<br>
     <strong>run:</strong> <code>apt install gcc</code><br>
 </p>
+
+<h2>Struktur, wie ein Server aufgebaut wird:</h2>
+- initialize api (Windows)
+- create socket
+- bind socket
+- listen on socket
+- loop:
+    - accept connection
+    - loop:
+        - receive data from client
+    - shutdown receiving
+    - send data to client
+    - shutdown sending
+    - close client socket
+- close listen socket
+- close api (Windows)
