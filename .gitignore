@@ -1,9 +1,9 @@
 # cl and gcc on Windows
-# *.obj
-# *.exe
+*.obj
+*.exe
 
 # gcc and clang on Unix-like systems
-# *.out
+*.out
 
 # vscode
-# .vscode
+.vscode
