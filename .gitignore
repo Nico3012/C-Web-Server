@@ -7,3 +7,6 @@ a.exe
 
 # gcc and clang on Unix-like systems
 a.out
+
+# vscode
+.vscode

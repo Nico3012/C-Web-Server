@@ -78,7 +78,7 @@ int main()
         }
 
         // receive data from client and print to console
-        do
+        /*do
         {
             iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // always stops here, since no more is sent and connection in not closed!
             if (iResult == SOCKET_ERROR)
@@ -94,7 +94,7 @@ int main()
         } while (iResult > 0);
 
         // status log
-        printf("received everything. Now send data!\n");
+        printf("received everything. Now send data!\n");*/
 
         // send data to client
         iResult = send(AcceptSocket, httpResponse, (int)strlen(httpResponse), 0);
@@ -106,7 +106,7 @@ int main()
         }
 
         // shutdown connection since no more data will be sent
-        iResult = shutdown(AcceptSocket, SD_BOTH); // shutdown send and receive
+        iResult = shutdown(AcceptSocket, SD_SEND); // shutdown send and receive
         if (iResult == SOCKET_ERROR)
         {
             printf("shutdown failed with error: %d\n", (int)WSAGetLastError());
