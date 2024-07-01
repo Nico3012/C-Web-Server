@@ -45,17 +45,17 @@
 </p>
 
 <h2>Struktur, wie ein Server aufgebaut wird:</h2>
-- initialize api (Windows)
-- create socket
-- bind socket
-- listen on socket
-- loop:
-    - accept connection
-    - loop:
-        - receive data from client
-    - shutdown receiving
-    - send data to client
-    - shutdown sending
-    - close client socket
-- close listen socket
-- close api (Windows)
+- initialize api (Windows)<br>
+- create socket<br>
+- bind socket<br>
+- listen on socket<br>
+- loop:<br>
+    - accept connection<br>
+    - loop:<br>
+        - receive data from client<br>
+    - shutdown receiving<br>
+    - send data to client<br>
+    - shutdown sending<br>
+    - close client socket<br>
+- close listen socket<br>
+- close api (Windows)<br>
