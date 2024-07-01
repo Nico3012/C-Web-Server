@@ -68,7 +68,7 @@ int main()
     service.sin_family = AF_INET;
     // service.sin_addr.s_addr = inet_addr("127.0.0.1");
     service.sin_addr.s_addr = INADDR_ANY;
-    service.sin_port = htons(80);
+    service.sin_port = 0x901f;
 
     // bind socket
     iResult = bind(ListenSocket, (SOCKADDR *)&service, sizeof(service));
@@ -103,7 +103,7 @@ int main()
         // receive data from client and print to console
         do
         {
-            iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // always stops here, since no more is sent and connection in not closed!
+            iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // need timeout interrupt here!
             if (iResult == SOCKET_ERROR)
             {
                 printf("recv failed with error: %d\n", (int)WSAGetLastError());

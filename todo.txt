@@ -1,0 +1,2 @@
+check all includes on windows and unix
+comment all included and needed functions near the include header

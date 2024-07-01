@@ -1,5 +1,6 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <unistd.h>
 #include <errno.h>
 
 #include <string.h>
@@ -7,24 +8,24 @@
 
 #define DEFAULT_BUFLEN 512
 
-/* agenda *//*
+/* agenda */ /*
 
-create socket                   [1]
-bind socket                     [0]
-listen on socket
-while {
-    accept client
-    while {
-        receive data
-    }
-    shutdown receiving
-    send data to client
-    shutdown sending
-    close client
-}
-close socket
+ create socket
+ bind socket
+ listen on socket
+ while {
+     accept client
+     while {
+         receive data
+     }
+     shutdown receiving
+     send data to client
+     shutdown sending
+     close client
+ }
+ close socket
 
-*/
+ */
 
 int main()
 {
@@ -50,31 +51,23 @@ int main()
     addr.sin_family = AF_INET;
     // addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     addr.sin_addr.s_addr = INADDR_ANY;
-    addr.sin_port = htons(80);
+    addr.sin_port = 0x901f;
 
-    // bind socket
-    iResult = bind(ListenSocket, (SOCKADDR *)&service, sizeof(service));
-    if (iResult == SOCKET_ERROR)
+    // bind socket // first difference to windows is struct sockaddr*, which differs to microsoft documentation
+    iResult = bind(ListenSocket, (struct sockaddr *)&addr, sizeof(addr));
+    if (iResult == -1)
     {
-        printf("bind failed with error: %d\n", (int)WSAGetLastError());
-        closesocket(ListenSocket);
-        WSACleanup();
+        printf("bind failed with error: %s\n", strerror(errno));
+        close(ListenSocket);
         return 1;
     }
 
-
-
-
-
-
-
     // listen on socket
     iResult = listen(ListenSocket, SOMAXCONN);
-    if (iResult == SOCKET_ERROR)
+    if (iResult == -1)
     {
-        printf("listen failed with error: %d\n", (int)WSAGetLastError());
-        closesocket(ListenSocket);
-        WSACleanup();
+        printf("listen failed with error: %s\n", strerror(errno));
+        close(ListenSocket);
         return 1;
     }
 
@@ -82,20 +75,20 @@ int main()
     {
         // accept socket and store client socket
         AcceptSocket = accept(ListenSocket, NULL, NULL);
-        if (AcceptSocket == INVALID_SOCKET)
+        if (AcceptSocket == -1)
         {
-            printf("accept failed with error: %d\n", (int)WSAGetLastError());
+            printf("accept failed with error: %s\n", strerror(errno));
             continue;
         }
 
         // receive data from client and print to console
         do
         {
-            iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // always stops here, since no more is sent and connection in not closed!
-            if (iResult == SOCKET_ERROR)
+            iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // need timeout interrupt here!
+            if (iResult == -1)
             {
-                printf("recv failed with error: %d\n", (int)WSAGetLastError());
-                closesocket(AcceptSocket);
+                printf("recv failed with error: %s\n", strerror(errno));
+                close(AcceptSocket);
                 continue;
             }
             else if (iResult > 0)
@@ -103,44 +96,44 @@ int main()
                 printf("%s\n", recvbuf);
 
                 // check for http request ending: \r\n\r\n
-                if (strstr(recvbuf, "\r\n\r\n")) {
+                if (strstr(recvbuf, "\r\n\r\n"))
+                {
                     break;
                 }
             }
         } while (iResult > 0);
 
         // shutdown receive connection since no more data will be received
-        iResult = shutdown(AcceptSocket, SD_RECEIVE);
-        if (iResult == SOCKET_ERROR)
+        iResult = shutdown(AcceptSocket, SHUT_RD);
+        if (iResult == -1)
         {
-            printf("shutdown failed with error: %d\n", (int)WSAGetLastError());
-            closesocket(AcceptSocket);
+            printf("shutdown failed with error: %s\n", strerror(errno));
+            close(AcceptSocket);
             continue;
         }
 
         // send data to client
         iResult = send(AcceptSocket, httpResponse, (int)strlen(httpResponse), 0);
-        if (iResult == SOCKET_ERROR)
+        if (iResult == -1)
         {
-            printf("send failed with error: %d\n", (int)WSAGetLastError());
-            closesocket(AcceptSocket);
+            printf("send failed with error: %s\n", strerror(errno));
+            close(AcceptSocket);
             continue;
         }
 
         // shutdown send connection since no more data will be sent
-        iResult = shutdown(AcceptSocket, SD_SEND);
-        if (iResult == SOCKET_ERROR)
+        iResult = shutdown(AcceptSocket, SHUT_WR);
+        if (iResult == -1)
         {
-            printf("shutdown failed with error: %d\n", (int)WSAGetLastError());
-            closesocket(AcceptSocket);
+            printf("shutdown failed with error: %s\n", strerror(errno));
+            close(AcceptSocket);
             continue;
         }
 
         // close socket
-        closesocket(AcceptSocket);
+        close(AcceptSocket);
     }
 
-    closesocket(ListenSocket);
-    WSACleanup();
+    close(ListenSocket);
     return 0;
 }
