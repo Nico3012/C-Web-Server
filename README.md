@@ -50,12 +50,12 @@
 - bind socket<br>
 - listen on socket<br>
 - loop:<br>
-    - accept connection<br>
-    - loop:<br>
-        - receive data from client<br>
-    - shutdown receiving<br>
-    - send data to client<br>
-    - shutdown sending<br>
-    - close client socket<br>
+-- accept connection<br>
+-- loop:<br>
+--- receive data from client<br>
+-- shutdown receiving<br>
+-- send data to client<br>
+-- shutdown sending<br>
+-- close client socket<br>
 - close listen socket<br>
 - close api (Windows)<br>
