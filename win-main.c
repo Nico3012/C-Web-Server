@@ -5,31 +5,31 @@
 
 #define DEFAULT_BUFLEN 512
 
-/* agenda *//*
+/* agenda */ /*
 
-init API
-create socket
-bind socket
-listen on socket
-while {
-    accept client
-    while {
-        receive data
-    }
-    shutdown receiving
-    send data to client
-    shutdown sending
-    close client
-}
-close socket
-release API
+ init API
+ create socket
+ bind socket
+ listen on socket
+ while {
+     accept client
+     while {
+         receive data
+     }
+     shutdown receiving
+     send data to client
+     shutdown sending
+     close client
+ }
+ close socket
+ release API
 
-*/
+ */
 
 int main()
 {
     char *httpResponse = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
-    
+
     // initialize variables
     int iResult;
     WSADATA wsaData;
@@ -92,6 +92,8 @@ int main()
 
     while (1)
     {
+        printf("accept\n");
+
         // accept socket and store client socket
         AcceptSocket = accept(ListenSocket, NULL, NULL);
         if (AcceptSocket == INVALID_SOCKET)
@@ -103,6 +105,8 @@ int main()
         // receive data from client and print to console
         do
         {
+            printf("recv\n");
+
             iResult = recv(AcceptSocket, recvbuf, recvbuflen, 0); // need timeout interrupt here!
             if (iResult == SOCKET_ERROR)
             {
@@ -112,14 +116,17 @@ int main()
             }
             else if (iResult > 0)
             {
-                printf("%s\n", recvbuf);
+                // printf("%s\n", recvbuf);
 
                 // check for http request ending: \r\n\r\n
-                if (strstr(recvbuf, "\r\n\r\n")) {
+                if (strstr(recvbuf, "\r\n\r\n"))
+                {
                     break;
                 }
             }
         } while (iResult > 0);
+
+        printf("shutdown receive\n");
 
         // shutdown receive connection since no more data will be received
         iResult = shutdown(AcceptSocket, SD_RECEIVE);
@@ -130,6 +137,8 @@ int main()
             continue;
         }
 
+        printf("send\n");
+
         // send data to client
         iResult = send(AcceptSocket, httpResponse, (int)strlen(httpResponse), 0);
         if (iResult == SOCKET_ERROR)
@@ -139,6 +148,8 @@ int main()
             continue;
         }
 
+        printf("shutdown send\n");
+
         // shutdown send connection since no more data will be sent
         iResult = shutdown(AcceptSocket, SD_SEND);
         if (iResult == SOCKET_ERROR)
@@ -147,6 +158,8 @@ int main()
             closesocket(AcceptSocket);
             continue;
         }
+
+        printf("closesocket\n");
 
         // close socket
         closesocket(AcceptSocket);
