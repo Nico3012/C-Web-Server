@@ -26,11 +26,11 @@ void printHex(unsigned char *str, int len)
 
 void handleConnection(char *recvbuf, int recvbuflen, char **respbuf, int *respbuflen)
 {
-    // printf("connection %d\n", connectionIndex);
+    printf("connection %d\n", connectionIndex);
 
-    /*if (connectionIndex == 0 || connectionIndex == 1)
+    if (connectionIndex == 0 || connectionIndex == 1)
     {
-        printHex(recvbuf, recvbuflen);
+        // printHex(recvbuf, recvbuflen);
 
         char res[] = {
             // Record Header
@@ -147,6 +147,8 @@ void handleConnection(char *recvbuf, int recvbuflen, char **respbuf, int *respbu
             0x1d,
             0x00,
             0x20,
+
+            // public key
             0x9f,
             0xd7,
             0xad,
@@ -181,11 +183,12 @@ void handleConnection(char *recvbuf, int recvbuflen, char **respbuf, int *respbu
             0x15,
         };
 
+        *respbuf = res;
+        *respbuflen = 127;
+    }
 
-    }*/
+    // *respbuf = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
+    // *respbuflen = 78;
 
-    *respbuf = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello World!";
-    *respbuflen = 78;
-
-    // connectionIndex++;
+    connectionIndex++;
 }
