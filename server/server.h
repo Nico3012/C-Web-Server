@@ -1,1 +1,1 @@
-int createServer(void (*handleConnection)(char* recvbuf, char* respbuf));
+int createServer(void (*handleConnection)(char *recvbuf, int recvbuflen, char **respbuf, int *respbuflen));

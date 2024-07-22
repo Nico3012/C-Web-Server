@@ -3,30 +3,30 @@
 #include <string.h>
 #include <stdio.h>
 
-#define DEFAULT_BUFLEN 512
+#define DEFAULT_BUFLEN 4096
 
-/* agenda *//*
+/* agenda */ /*
 
-init API
-create socket
-bind socket
-listen on socket
-while {
-    accept client
-    while {
-        receive data
-    }
-    shutdown receiving
-    send data to client
-    shutdown sending
-    close client
-}
-close socket
-release API
+ init API
+ create socket
+ bind socket
+ listen on socket
+ while {
+     accept client
+     while {
+         receive data
+     }
+     shutdown receiving
+     send data to client
+     shutdown sending
+     close client
+ }
+ close socket
+ release API
 
-*/
+ */
 
-int createServer(void (*handleConnection)(char* recvbuf, char* respbuf))
+int createServer(void (*handleConnection)(char *recvbuf, int recvbuflen, char **respbuf, int *respbuflen))
 {
     // initialize variables
     int iResult;
@@ -35,7 +35,8 @@ int createServer(void (*handleConnection)(char* recvbuf, char* respbuf))
     SOCKET AcceptSocket;
     int recvbuflen = DEFAULT_BUFLEN;
     char recvbuf[DEFAULT_BUFLEN] = "";
-    char respbuf[DEFAULT_BUFLEN] = "";
+    int respbuflen;
+    char *respbuf;
 
     // init Winsock
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -114,9 +115,11 @@ int createServer(void (*handleConnection)(char* recvbuf, char* respbuf))
                 // printf("%s\n", recvbuf);
 
                 // check for http request ending: \r\n\r\n
-                if (strstr(recvbuf, "\r\n\r\n")) {
-                    break;
-                }
+                // if (strstr(recvbuf, "\r\n\r\n")) {
+                //     break;
+                // }
+
+                break;
             }
         } while (iResult > 0);
 
@@ -129,10 +132,10 @@ int createServer(void (*handleConnection)(char* recvbuf, char* respbuf))
             continue;
         }
 
-        handleConnection(recvbuf, respbuf);
+        handleConnection(recvbuf, recvbuflen, &respbuf, &respbuflen);
 
         // send data to client
-        iResult = send(AcceptSocket, respbuf, (int)strlen(respbuf), 0);
+        iResult = send(AcceptSocket, respbuf, respbuflen, 0);
         if (iResult == SOCKET_ERROR)
         {
             printf("send failed with error: %d\n", (int)WSAGetLastError());
