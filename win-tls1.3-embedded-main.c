@@ -130,7 +130,7 @@ int main()
                 continue;
             }
 
-            printHex(recvbuf, 0, 1024);
+            printHex(recvbuf, 0, 700);
         }
 
         int serverHelloLen = 127;
@@ -152,7 +152,7 @@ int main()
             0x03,
             0x03,
 
-            // Server Random
+            // Server Random (just generate random data)
             0x70,
             0x71,
             0x72,
@@ -186,7 +186,7 @@ int main()
             0x8e,
             0x8f,
 
-            // Session ID
+            // Session ID (just generate random data)
             0x20,
             0xe0,
             0xe1,
@@ -221,7 +221,7 @@ int main()
             0xfe,
             0xff,
 
-            // Cipher Suite
+            // Cipher Suite // (TLS_AES_256_GCM_SHA384)
             0x13,
             0x02,
 
