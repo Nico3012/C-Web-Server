@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#define DEFAULT_BUFLEN 2048
+#define DEFAULT_BUFLEN 4096
 
 /* agenda */ /*
 
