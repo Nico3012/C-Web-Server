@@ -5,14 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#ifdef _WIN32
-    #include <WinSock2.h>
-#else
-    #include <unistd.h>
-    #include <sys/socket.h>
-    #include <arpa/inet.h>
-#endif
-
 #include <mbedtls/net_sockets.h>
 #include <mbedtls/ssl.h>
 #include <mbedtls/ssl_cache.h>
@@ -97,12 +89,21 @@ int main() {
 
     // Specify the supported cipher suites
     const int ciphersuites[] = {
-        // MBEDTLS_TLS1_3_AES_128_GCM_SHA256,
-        // MBEDTLS_TLS1_3_AES_256_GCM_SHA384,
-        // MBEDTLS_SSL_TLS1_3_KEY_EXCHANGE_MODE_ALL,
-        MBEDTLS_SSL_TLS1_3_PSK_MODE_ECDHE,
+        // tls 1.2
         // MBEDTLS_TLS_RSA_WITH_AES_128_GCM_SHA256,
         // MBEDTLS_TLS_RSA_WITH_AES_256_GCM_SHA384,
+        MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,
+        MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
+        // tls 1.3
+
+        // MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_RSA_PSK_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_DHE_PSK_WITH_AES_128_GCM_SHA256,
+        // MBEDTLS_TLS_PSK_WITH_AES_128_GCM_SHA256,
+
         0 // end of list
     };
     mbedtls_ssl_conf_ciphersuites(&conf, ciphersuites);
@@ -110,8 +111,8 @@ int main() {
     // Specify the SSL/TLS version to use
     // mbedtls_ssl_conf_min_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3); // TLS 1.2
     // mbedtls_ssl_conf_max_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3); // TLS 1.2
-    mbedtls_ssl_conf_min_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_4); // TLS 1.3
-    mbedtls_ssl_conf_max_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_4); // TLS 1.3
+    mbedtls_ssl_conf_min_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3); // TLS 1.3
+    mbedtls_ssl_conf_max_version(&conf, MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3); // TLS 1.3
 
     mbedtls_ssl_conf_rng(&conf, mbedtls_ctr_drbg_random, &ctr_drbg);
     mbedtls_ssl_conf_ca_chain(&conf, srvcert.next, NULL);
