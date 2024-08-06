@@ -16,7 +16,7 @@
 #include <mbedtls/error.h>
 
 #define SERVER_PORT "4433"
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 4096
 
 void handle_client(mbedtls_ssl_context *ssl) {
     unsigned char buf[BUFFER_SIZE];
@@ -28,9 +28,9 @@ void handle_client(mbedtls_ssl_context *ssl) {
         return;
     }
 
-    printf("Received message from client: %s\n", buf);
+    // printf("Received message from client: %s\n", buf);
 
-    const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello WORld";
+    const char *response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nHello WORld!";
     mbedtls_ssl_write(ssl, (unsigned char *)response, strlen(response));
 }
 
