@@ -1,11 +1,9 @@
-// gcc tls-1.2-gpt4-o.c -I./mbedtls/include -I./mbedtls/library ./mbedtls/library/*.c
+// gcc win-test-tls-1.2-gpt4-o.c -I./mbedtls/include -I./mbedtls/library ./mbedtls/library/*.c -lws2_32 -lbcrypt
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
+#include <WinSock2.h>
 
 #include <mbedtls/net_sockets.h>
 #include <mbedtls/ssl.h>
