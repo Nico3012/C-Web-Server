@@ -1,10 +1,5 @@
-#include "user_settings_template.h"
-// #include <wolfssl/options.h>
-// #include "wolfssl/wolfssl/options.h.in"
-
-
-#include <wolfssl/ssl.h>
-//#include "wolfssl/wolfssl/ssl.h"
+#include "user_settings.h"
+#include "wolfssl/wolfssl/ssl.h"
 
 #include <stdio.h>
 #include <stdlib.h>

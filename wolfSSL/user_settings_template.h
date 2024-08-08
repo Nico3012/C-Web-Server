@@ -36,27 +36,27 @@ extern "C" {
     #define TARGET_EMBEDDED
 #endif
 
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------- */
 /* Platform */
 /* ------------------------------------------------------------------------- */
 #define WOLFSSL_GENERAL_ALIGNMENT 4
 #define SIZEOF_LONG_LONG 8
+#if 0
+    #define NO_64BIT /* disable use of 64-bit variables */
+#endif
 
+#ifdef TARGET_EMBEDDED
+    /* disable mutex locking */
+    #define SINGLE_THREADED
 
+    /* reduce stack use. For variables over 100 bytes allocate from heap */
+    #define WOLFSSL_SMALL_STACK
 
-
-
-
-
-
+    /* Disable the built-in socket support and use the IO callbacks.
+     * Set IO callbacks with wolfSSL_CTX_SetIORecv/wolfSSL_CTX_SetIOSend
+     */
+    #define WOLFSSL_USER_IO
+#endif
 
 /* ------------------------------------------------------------------------- */
 /* Math Configuration */
@@ -65,12 +65,12 @@ extern "C" {
 #if 1
     #define WOLFSSL_HAVE_SP_RSA
     #define WOLFSSL_HAVE_SP_DH
-    //#define WOLFSSL_HAVE_SP_ECC
+    #define WOLFSSL_HAVE_SP_ECC
     //#define WOLFSSL_SP_4096 /* Enable RSA/RH 4096-bit support */
     //#define WOLFSSL_SP_384 /* Enable ECC 384-bit SECP384R1 support */
 
     //#define WOLFSSL_SP_MATH     /* only SP math - disables integer.c/tfm.c */
-    //#define WOLFSSL_SP_MATH_ALL /* use SP math for all key sizes and curves */
+    #define WOLFSSL_SP_MATH_ALL /* use SP math for all key sizes and curves */
 
     //#define WOLFSSL_SP_NO_MALLOC
     //#define WOLFSSL_SP_DIV_32 /* do not use 64-bit divides */
@@ -96,22 +96,6 @@ extern "C" {
     /* Normal (integer.c) (heap based, not timing resistant) - not recommended*/
     #define USE_INTEGER_HEAP_MATH
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------------------------------------------------- */
@@ -331,16 +315,65 @@ extern "C" {
 #endif
 
 
+/* ------------------------------------------------------------------------- */
+/* Benchmark / Test */
+/* ------------------------------------------------------------------------- */
+#ifdef TARGET_EMBEDDED
+    /* Use reduced benchmark / test sizes */
+    #define BENCH_EMBEDDED
+#endif
+
 /* Use test buffers from array (not filesystem) */
 #ifndef NO_FILESYSTEM
 #define USE_CERT_BUFFERS_256
 #define USE_CERT_BUFFERS_2048
 #endif
 
+/* ------------------------------------------------------------------------- */
+/* Debugging */
+/* ------------------------------------------------------------------------- */
+
+#undef DEBUG_WOLFSSL
+#undef NO_ERROR_STRINGS
+#if 0
+    #define DEBUG_WOLFSSL
+#else
+    #if 0
+        #define NO_ERROR_STRINGS
+    #endif
+#endif
+
 
 /* ------------------------------------------------------------------------- */
 /* Memory */
 /* ------------------------------------------------------------------------- */
+
+/* Override Memory API's */
+#if 0
+    #define XMALLOC_OVERRIDE
+
+    /* prototypes for user heap override functions */
+    /* Note: Realloc only required for normal math */
+    #include <stddef.h>  /* for size_t */
+    extern void *myMalloc(size_t n, void* heap, int type);
+    extern void myFree(void *p, void* heap, int type);
+    extern void *myRealloc(void *p, size_t n, void* heap, int type);
+
+    #define XMALLOC(n, h, t)     myMalloc(n, h, t)
+    #define XFREE(p, h, t)       myFree(p, h, t)
+    #define XREALLOC(p, n, h, t) myRealloc(p, n, h, t)
+#endif
+
+#if 0
+    /* Static memory requires fast math */
+    #define WOLFSSL_STATIC_MEMORY
+
+    /* Disable fallback malloc/free */
+    #define WOLFSSL_NO_MALLOC
+    #if 1
+        #define WOLFSSL_MALLOC_CHECK /* trap malloc failure */
+    #endif
+#endif
 
 /* Memory callbacks */
 #if 0
@@ -354,9 +387,24 @@ extern "C" {
     #endif
 #else
     #ifndef WOLFSSL_STATIC_MEMORY
-        #undef NO_WOLFSSL_MEMORY
+        #define NO_WOLFSSL_MEMORY
         /* Otherwise we will use stdlib malloc, free and realloc */
     #endif
+#endif
+
+
+/* ------------------------------------------------------------------------- */
+/* Port */
+/* ------------------------------------------------------------------------- */
+
+/* Override Current Time */
+#if 0
+    /* Allows custom "custom_time()" function to be used for benchmark */
+    #define WOLFSSL_USER_CURRTIME
+    #define WOLFSSL_GMTIME
+    #define USER_TICKS
+    extern unsigned long my_time(unsigned long* timer);
+    #define XTIME my_time
 #endif
 
 
@@ -390,6 +438,40 @@ extern "C" {
 #endif
 
 
+/* ------------------------------------------------------------------------- */
+/* Custom Standard Lib */
+/* ------------------------------------------------------------------------- */
+/* Allows override of all standard library functions */
+#undef STRING_USER
+#if 0
+    #define STRING_USER
+
+    #include <string.h>
+
+    #define USE_WOLF_STRSEP
+    #define XSTRSEP(s1,d)     wc_strsep((s1),(d))
+
+    #define USE_WOLF_STRTOK
+    #define XSTRTOK(s1,d,ptr) wc_strtok((s1),(d),(ptr))
+
+    #define XSTRNSTR(s1,s2,n) mystrnstr((s1),(s2),(n))
+
+    #define XMEMCPY(d,s,l)    memcpy((d),(s),(l))
+    #define XMEMSET(b,c,l)    memset((b),(c),(l))
+    #define XMEMCMP(s1,s2,n)  memcmp((s1),(s2),(n))
+    #define XMEMMOVE(d,s,l)   memmove((d),(s),(l))
+
+    #define XSTRLEN(s1)       strlen((s1))
+    #define XSTRNCPY(s1,s2,n) strncpy((s1),(s2),(n))
+    #define XSTRSTR(s1,s2)    strstr((s1),(s2))
+
+    #define XSTRNCMP(s1,s2,n)     strncmp((s1),(s2),(n))
+    #define XSTRNCAT(s1,s2,n)     strncat((s1),(s2),(n))
+    #define XSTRNCASECMP(s1,s2,n) strncasecmp((s1),(s2),(n))
+
+    #define XSNPRINTF snprintf
+#endif
+
 
 
 /* ------------------------------------------------------------------------- */
@@ -418,10 +500,10 @@ extern "C" {
 /* Disable Features */
 /* ------------------------------------------------------------------------- */
 //#define NO_WOLFSSL_SERVER
-#define NO_WOLFSSL_CLIENT
-#define NO_CRYPT_TEST
-#define NO_CRYPT_BENCHMARK
-#define WOLFCRYPT_ONLY
+//#define NO_WOLFSSL_CLIENT
+//#define NO_CRYPT_TEST
+//#define NO_CRYPT_BENCHMARK
+//#define WOLFCRYPT_ONLY
 
 /* do not warm when file is included to be built and not required to be */
 #define WOLFSSL_IGNORE_FILE_WARN
@@ -430,6 +512,13 @@ extern "C" {
 /* If defined, must include wolfcrypt/src/misc.c in build */
 /* Slower, but about 1k smaller */
 //#define NO_INLINE
+
+#ifdef TARGET_EMBEDDED
+    #define NO_FILESYSTEM
+    #define NO_WRITEV
+    #define NO_MAIN_DRIVER
+    #define NO_DEV_RANDOM
+#endif
 
 #define NO_OLD_TLS
 #define NO_PSK
@@ -442,18 +531,6 @@ extern "C" {
 //#define NO_ASN_TIME
 //#define NO_CERTS
 //#define NO_SIG_WRAPPER
-
-
-
-
-
-
-// copilot error response:
-#define WOLFSSL_REF
-// #define OPENSSL_ALL
-
-
-
 
 #ifdef __cplusplus
 }
