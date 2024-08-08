@@ -10,7 +10,7 @@
     <h6>using gcc from MinGW on Windows:</h6>
     link libws2_32.a (static libs on linux are named lib*.a)<br>
     MinGW ports the GNU Compiler Collection from Linux to Windows. Therefore, static libs are named lib*.a<br>
-    The <code>-l ws2_32</code> flag adds lib*.a itself and would therefore do the same as <code>-l:libws2_32.a</code>.<br>
+    The <code>-lws2_32</code> flag adds lib*.a itself and would therefore do the same as <code>-l:libws2_32.a</code>.<br>
     <strong>run:</strong> <code>gcc .\main.c .\server\win-server.c -l:libws2_32.a</code><br>
 </p>
 
