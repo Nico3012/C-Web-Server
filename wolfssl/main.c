@@ -5,8 +5,9 @@
 #include <stdlib.h>
 #include <math.h> // pow and log functions
 #include <string.h>
-#include <unistd.h>
-#include <arpa/inet.h>
+// #include <unistd.h>
+// #include <arpa/inet.h>
+#include <WinSock2.h>
 
 #define DEFAULT_PORT 4433
 #define CERT_FILE "server_cert.pem"
