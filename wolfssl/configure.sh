@@ -1,0 +1,55 @@
+./configure \
+    --disable-asm \
+    --disable-benchmark \
+    --disable-sp-asm \
+    --enable-singlethreaded \
+    --enable-tls13 \
+    \
+    --disable-harden \
+    --disable-aescbc \
+    --enable-aesgcm \
+    \
+    --disable-aligndata \
+    \
+    --disable-sha224 \
+    --disable-sha3 \
+    --enable-sha512 \
+    --disable-sha384 \
+    --disable-eccshamir \
+    --enable-ecc \
+    --disable-brainpool \
+    --enable-ed25519 \
+    --disable-errorstrings \
+    --disable-errorqueue \
+    --disable-tlsv12 \
+    --enable-memory \
+    --enable-rsa \
+    --disable-oaep \
+    --disable-dh \
+    --enable-asn \
+    --disable-asn-print \
+    --enable-aes \
+    --disable-coding \
+    --disable-base64encode \
+    --disable-md5 \
+    --disable-sha \
+    --disable-xts \
+    --disable-poly1305 \
+    --disable-chacha \
+    --enable-hashdrbg \
+    --enable-filesystem \
+    --disable-inline \
+    --disable-sni \
+    --disable-secure-renegotiation-info \
+    --enable-supportedcurves \
+    --disable-extended-master \
+    --disable-enc-then-mac \
+    --disable-pkcs12 \
+    --disable-examples \
+    --disable-crypttests \
+    --disable-pkcs8 \
+    --disable-asyncthreads \
+    --disable-sys-ca-certs \
+    --disable-openssl-compatible-defaults \
+    --enable-jobserver=no \
+    --disable-makeclean

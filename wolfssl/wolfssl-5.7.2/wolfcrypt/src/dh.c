@@ -83,6 +83,7 @@ Possible DH enable options:
  *                             (on for FIPS 140-3 or later)   default: off
 */
 
+
 #if !defined(USER_MATH_LIB) && !defined(WOLFSSL_DH_CONST)
     #include <math.h>
     #define XPOW(x,y) pow((x),(y))

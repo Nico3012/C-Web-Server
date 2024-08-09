@@ -36,8 +36,8 @@ extern "C" {
 #undef  WOLFSSL_X86_64_BUILD
 #define WOLFSSL_X86_64_BUILD
 
-#undef  ERROR_QUEUE_PER_THREAD
-#define ERROR_QUEUE_PER_THREAD
+#undef  SINGLE_THREADED
+#define SINGLE_THREADED
 
 #undef  TFM_TIMING_RESISTANT
 #define TFM_TIMING_RESISTANT
@@ -50,9 +50,6 @@ extern "C" {
 
 #undef  WOLFSSL_USE_ALIGN
 #define WOLFSSL_USE_ALIGN
-
-#undef  WOLFSSL_SHA224
-#define WOLFSSL_SHA224
 
 #undef  WOLFSSL_SHA512
 #define WOLFSSL_SHA512
@@ -75,6 +72,9 @@ extern "C" {
 #undef  ECC_SHAMIR
 #define ECC_SHAMIR
 
+#undef  HAVE_CURVE25519
+#define HAVE_CURVE25519
+
 #undef  NO_OLD_TLS
 #define NO_OLD_TLS
 
@@ -84,17 +84,14 @@ extern "C" {
 #undef  WOLFSSL_PSS_LONG_SALT
 #define WOLFSSL_PSS_LONG_SALT
 
+#undef  NO_DH
+#define NO_DH
+
 #undef  WOLFSSL_ASN_TEMPLATE
 #define WOLFSSL_ASN_TEMPLATE
 
 #undef  WOLFSSL_ASN_PRINT
 #define WOLFSSL_ASN_PRINT
-
-#undef  WOLFSSL_BASE64_ENCODE
-#define WOLFSSL_BASE64_ENCODE
-
-#undef  WOLFSSL_SHA3
-#define WOLFSSL_SHA3
 
 #undef  WOLFSSL_NO_SHAKE128
 #define WOLFSSL_NO_SHAKE128
@@ -108,26 +105,14 @@ extern "C" {
 #undef  NO_CHACHA_ASM
 #define NO_CHACHA_ASM
 
-#undef  HAVE_CHACHA
-#define HAVE_CHACHA
-
 #undef  HAVE_HASHDRBG
 #define HAVE_HASHDRBG
 
 #undef  HAVE_TLS_EXTENSIONS
 #define HAVE_TLS_EXTENSIONS
 
-#undef  HAVE_SNI
-#define HAVE_SNI
-
-#undef  HAVE_TLS_EXTENSIONS
-#define HAVE_TLS_EXTENSIONS
-
 #undef  HAVE_SUPPORTED_CURVES
 #define HAVE_SUPPORTED_CURVES
-
-#undef  HAVE_FFDHE_2048
-#define HAVE_FFDHE_2048
 
 #undef  HAVE_SUPPORTED_CURVES
 #define HAVE_SUPPORTED_CURVES
@@ -156,11 +141,11 @@ extern "C" {
 #undef  WC_NO_ASYNC_THREADING
 #define WC_NO_ASYNC_THREADING
 
-#undef  HAVE_DH_DEFAULT_PARAMS
-#define HAVE_DH_DEFAULT_PARAMS
-
 #undef  WOLFSSL_SYS_CA_CERTS
 #define WOLFSSL_SYS_CA_CERTS
+
+#undef  HAVE_ED25519
+#define HAVE_ED25519
 
 #undef  NO_DES3
 #define NO_DES3
