@@ -9,4 +9,5 @@
 .vscode
 
 mbedtls/mbedtls-gh
-wolfSSL/wolfssl-gh
+wolfssl/wolfssl-gh
+# wolfssl/wolfssl-5.7.2
