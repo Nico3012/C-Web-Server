@@ -1,3 +1,4 @@
+/*
 #undef __CYGWIN__
 #define __MINGW32__
 
@@ -28,12 +29,12 @@
 
 
 
-
+*/
 
 /*-----------------------------------------------------------------------*/
 /* ARCHITECTURES */
 /*-----------------------------------------------------------------------*/
-
+/*
 // undef all architecture with sizeof(long) == 8:
 #undef __alpha__
 #undef __ia64__
@@ -54,3 +55,4 @@
 #undef __i386__
 #undef __CORTEX_M3__
 // #define SIZEOF_LONG_LONG 8
+*/
