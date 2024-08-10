@@ -1,0 +1,1614 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.40.33813.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Hinweis: Einlesen der Datei: C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Hinweis: Einlesen der Datei: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile error D8004 : "/V" erfordert ein Argument.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "--version" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile error D8004 : "/V" erfordert ein Argument.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+      cl : Befehlszeile warning D9002 : Unbekannte Option "-qversion" wird ignoriert.
+      cl : Befehlszeile error D8003 : Name der Quelldatei fehlt.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:37 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" matched "Microsoft":
+      Microsoft (R) C/C++-Optimierungscompiler Version 19.40.33813 für x64
+      Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+      
+                               C/C++-COMPILEROPTIONEN
+      
+      
+                                    -OPTIMIERUNG-
+      
+      /O1 maximale Optimierungen (Platz bevorzugen)
+      /O2 maximale Optimierungen (Geschwindigkeit bevorzugen)
+      /Ob<n> Inlineerweiterung (Standard: n=0)
+      /Od Optimierungen deaktivieren (Standard)
+      /Og Globale Optimierung aktivieren      
+      /Oi[-] Systeminterne Funktionen aktivieren
+      /Os Codespeicherplatz vorrangig         /Ot Codegeschwindigkeit vorrangig
+      /Ox Optimierungen (Geschwindigkeit bevorzugen)
+      /favor:<blend|AMD64|INTEL64|ATOM> Prozessor auswählen, für den optimiert werden soll. Mögliche Werte:
+          blend – eine Kombination verschiedener Optimierungen für mehrere unterschiedliche x64-Prozessoren
+          AMD64 – 64-Bit-AMD-Prozessoren
+          INTEL64 – Prozessoren mit Intel(R)64-Architektur
+          ATOM – Intel(R) Atom(TM)-Prozessoren
+      
+                                   -CODEGENERIERUNG-
+      
+      /Gu[-]: Stellen Sie sicher, dass unterschiedliche Funktionen unterschiedliche Adressen aufweisen.
+      /Gw[-] separate globale Variablen für Linker
+      /GF Schreibgeschütztes Stringpooling aktivieren
+      /Gy[-] Separate Funktionen für Linker   
+      /GS[-] Sicherheitsüberprüfungen aktivieren
+      /GR[-] C++-RTTI aktivieren              
+      /guard:cf[-] CFG aktivieren (Control Flow Guard, Ablaufsteuerungsscchutz)
+      "/guard:ehcont[-]" zum Aktivieren von EH-Fortsetzungsmetadaten (CET)
+      /EHs C++-EH aktivieren (ohne SEH-Ausnahmen)
+      /EHa C++-EH aktivieren (mit SEH-Ausnahmen)
+      /EHc nothrow als Standard für externes "C"
+      /EHr immer noexcept-Laufzeitbeendigungsprüfungen generieren
+      /fp:<contract|except[-]|fast|precise|strict> Gleitkommamodell wählen:
+          contract – Gleitkommakontraktionen beim Generieren von Code berücksichtigen
+          except[-] – Gleitkommaausnahmen beim Generieren von Code berücksichtigen
+          fast – "schnelles" Gleitkommamodell mit weniger vorhersehbaren Ergebnissen
+          precise – "präzises" Gleitkommamodell; Ergebnisse sind vorhersehbar.
+          strict – "striktes" Gleitkommamodell (impliziert /fp:except)
+      /Qfast_transcendentals generieren auch bei /fp:except systeminterne Inline-FP.
+      /Qspectre[-] Entschärfungen für CVE 2017-5753 aktivieren
+      /Qpar[-] parallele Codegenerierung aktivieren
+      /Qpar-report:1 automatische Parallelisierungsdiagnose; parallelisierte Schleifen anzeigen
+      /Qpar-report:2 automatische Parallelisierungsdiagnose; nicht parallelisierte Schleifen anzeigen
+      /Qvec-report:1 automatische Vektorisierungsdiagnose; vektorisierte Schleifen anzeigen
+      /Qvec-report:2 automatische Vektorisierungsdiagnose; nicht vektorisierte Schleifen anzeigen
+      /GL[-] Link-Zeitcodegenerierung aktivieren
+      /volatile:<iso|ms> flüchtiges Modell auswählen:
+          iso – Acquire-/release-Semantik bei flüchtigen Zugriffen nicht garantiert
+          ms – Acquire-/release-Semantik bei flüchtigen Zugriffen garantiert
+      /GA Für Windows-Anwendung optimieren    
+      /Ge Stapelüberprüfung für alle Funktionen erzwingen
+      /Gs[zahl] Stapelüberprüfungsaufrufe kontrollieren
+      /Gh _penter-Funktionsaufruf aktivieren  /GH _pexit-Funktionsaufruf aktivieren
+      /GT Fiber-sichere TLS-Zugriffe generieren
+      /RTC1 Schnelle Überprüfungen aktivieren (/RTCsu)
+      /RTCc Konvertierung für kleinere Typenüberprüfungen
+      /RTCs Stapelrahmen-Laufzeitüberprüfung  
+      /RTCu Nicht initialisierte lokale Syntaxüberprüfungen
+      /clr[:option] compile for common language runtime, where option is:
+          pure : produce IL-only output file (no native executable code)
+          safe : produce IL-only verifiable output file
+          netcore : produce assemblies targeting .NET Core runtime
+          noAssembly : do not produce an assembly
+          nostdlib : ignore the system .NET framework directory when searching for assemblies
+          nostdimport : do not import any required assemblies implicitly
+          initialAppDomain : enable initial AppDomain behavior of Visual C++ 2002
+          implicitKeepAlive- : turn off implicit emission of System::GC::KeepAlive(this)
+          char_t- : turn off metadata support for char8_t, char16_t and char32_t
+      /fsanitize=address Enable address sanitizer codegen
+      /homeparams Schreiben von an die Register übergebenen Parametern in den Stapel erzwingen
+      /GZ Stapelüberprüfungen aktivieren (/RTCs)
+      /Gv __vectorcall-Aufrufkonvention       
+      /arch:<SSE2|SSE4.2|AVX|AVX2|AVX512> Mindestanforderungen an die CPU-Architektur. Mögliche Werte:
+         SSE2 – (Standard) Verwendung der für SSE2-fähige CPUs verfügbaren Anweisungen aktivieren
+         SSE4.2 – Verwendung der für SSE4.2-fähige CPUs verfügbaren Anweisungen aktivieren
+         AVX – Verwendung der für AVX-fähige CPUs verfügbaren Anweisungen aktivieren
+         AVX2 – Verwendung der für AVX2-fähige CPUs verfügbaren Anweisungen aktivieren
+         AVX512 – Verwendung der für AVX512-fähige CPUs verfügbaren Anweisungen aktivieren
+      /QIntel-jcc-erratum: Entschärfungen für Intel JCC-Erratum aktivieren
+      /Qspectre-load: Aktivieren von Spectre-Entschärfungen für alle Anweisungen, die Arbeitsspeicher laden
+      /Qspectre-load-cf: Spectre-Entschärfungen für alle Ablaufsteuerungsanweisungen, die Arbeitsspeicher laden, werden aktiviert.
+      /Qspectre-jmp[-] Aktiviert Spectre-Minderungen für Anweisungen zum uneingeschränkten Springen.
+      /fpcvt:<IA|BC> Kompatibilität der Konvertierung von Gleitkommazahlen in ganze Zahlen ohne Vorzeichen
+         IA – Ergebnisse kompatibel mit VCVTTSD2USI-Anweisung
+         BC – Ergebnisse kompatibel mit VS2017- und früheren Compilern
+      /jumptablerdata Platziert Sprungtabellen für Switch case-Anweisungen im RDATA-Abschnitt.
+      
+                                    -AUSGABEDATEIEN-
+      
+      /Fa[Datei] Name der Assemblylistingdatei/FA[scu] Assemblyliste konfigurieren
+      /Fd[Datei] Name der PDB-Datei           /Fe<Datei> Name der ausführbaren Datei
+      /Fm[datei] Name der Zuordnungsdatei     /Fo<datei> Name der Objektdatei
+      /Fp<Datei> Name der vorkompilierten Headerdatei
+      /Fr[Datei] Name der Quellbrowserdatei   
+      /FR[Datei ] Name der erweiterten SBR-Datei
+      /Fi[datei] Vorverarbeitete Datei benennen
+      /Fd: <Datei> Name der PDB-Datei         /Fe: <Datei> Name der ausführbaren Datei
+      /Fm: <Datei> Name der Zuordnungsdatei   /Fo: <Datei> Name der Objektdatei
+      /Fp: <Datei> Name der PCH-Datei         
+      /FR: <Datei> Name der erweiterten SBR-Datei
+      /Fi: <Datei> Vorverarbeitete Datei benennen
+      /FT<dir>: Speicherort der für #import generierten Headerdateien
+      /doc[Datei] XML-Dokumentationskommentare verarbeiten und optional die XDC-Datei benennen
+      
+                                    -PRÄPROZESSOR-
+      
+      /AI<Verz> Zu Assemblysuchpfad hinzufügen
+      /FU<file> .NET-Assembly/-Modul importieren
+      /FU:asFriend<file> .NET-Assembly/-Modul als Freund importieren
+      /C Kommentare nicht entfernen           /D<name>{=|#}<text> Makro definieren
+      /E In stdout vorverarbeiten             /EP In stdout vorverarbeiten, kein #line
+      /P In Datei vorverarbeiten              
+      /Fx Eingefügten Code in Datei zusammenführen
+      /FI<Datei> Name der Datei, deren Einschluss erzwungen wird
+      /U<Name> Vordefiniertes Makro entfernen /u Alle vordefinierten Makros entfernen
+      /I<Verz> Zu Include-Suchpfad hinzufügen /X Standardspeicherorte ignorieren
+      /PH generiert #pragma file_hash bei der Vorbearbeitung
+      /PD: alle Makrodefinitionen drucken     
+      
+                                      -PROGRAMMIERSPRACHE-
+      
+      /std:<c++14|c++17|c++20|c++latest> C++ Standardversion
+          c++14 – ISO/IEC 14882:2014 (Standardwert)
+          c++17 – ISO/IEC 14882:2017
+          c++20 – ISO/IEC 14882:2020
+          c++latest – aktueller Entwurfsstandard (Featuregruppe kann sich ändern)
+      /std:<c11|c17|clatest> C-Standardversion
+          c11 – ISO/IEC 9899:2011
+          c17 – ISO/IEC 9899:2018
+          clatest – aktueller Entwurfsstandard (Änderung des Featuresatzes vorbehalten)
+      /permissive[-] nicht konformen Code zum Kompilieren aktivieren
+                     (Änderungsbetreff für Featuresatz) (standardmäßig aus in C++20 und höher)
+      /Za Erweiterungen deaktivieren (nicht empfohlen für C++)
+      /ZW WinRT-Spracherweiterungen aktivieren/Zs Nur Syntaxüberprüfung
+      /await: Aktiviert die Erweiterung für fortsetzbare Funktionen
+      /await:strict: Aktiviert die Unterstützung von C++20-Standardcoroutinen für frühere Sprachversionen.
+      /constexpr:depth<N>     Grenzwert für die Rekursionstiefe für constexpr-Auswertung (Standardwert: 512)
+      /constexpr:backtrace<N> N constexpr-Auswertungen in der Diagnose anzeigen (Standardwert: 10)
+      /constexpr:steps<N>     constexpr-Auswertung nach N Schritten beenden (Standardwert: 1048576)
+      /Zi Debuginformationen aktivieren       
+      /Z7 Debuginformationen nach altem Stil aktivieren
+      /Zo[-] Umfangreichere Debuginformationen für optimierten Code generieren (standardmäßig aktiviert)
+      /ZH:[MD5|SHA1|SHA_256] – Hashalgorithmus für die Berechnung der Dateiprüfsumme in den Debuginformationen (Standard: SHA_256)
+      /Zp[n] Strukturen an n-Byte-Grenze packen
+      /Zl Kein Standardbibliotheksname in OBJ-Datei
+      /vd{0|1|2} vtordisp deaktivieren/aktivieren
+      /vm<x> Typ von Memberzeigern            
+      /Zc:arg1[,arg2] Sprachübereinstimmung. Folgende Argumente sind zulässig:
+        forScope[-]           Standard-C++ für Bereichsregeln erzwingen
+        wchar_t[-]            wchar_t ist der native Typ, nicht typedef
+        auto[-]               Neue C++-Standardbedeutung für "auto" erzwingen
+        trigraphs[-]          Trigraphen aktivieren (standardmäßig deaktiviert)
+        rvalueCast[-]         Standard-C++ für explizite Typenkonvertierungsregeln erzwingen
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        strictStrings[-]      Zeichenfolgenliteral in [char|wchar_t]* deaktivieren
+                              Konvertierung (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        implicitNoexcept[-]   Implizites "noexcept" für erforderliche Funktionen aktivieren
+        threadSafeInit[-]     Thread-sichere lokale statische Initialisierung aktivieren
+        inline[-]             Nicht referenzierte Funktion oder Daten entfernen, wenn:
+                              COMDAT oder nur interne Bindung (standardmäßig deaktiviert)
+        sizedDealloc[-]       C++14-Deallocation globaler Größe aktivieren
+                              Funktionen (standardmäßig aktiviert)
+        throwingNew[-]        Annehmen, dass der new-Operator bei einem Fehler ausgelöst wird (standardmäßig deaktiviert)
+        referenceBinding[-]   ein temporäres Element wird nicht an eine Nichtkonst. gebunden
+                              Ivalue-Verweis (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        twoPhase-             Zweiphasen-Namenssuche deaktivieren
+        ternary[-]            C++11-Standardregeln für Bedingungsoperator erzwingen
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        noexceptTypes[-]      C++17-noexcept-Regeln erzwingen (standardmäßig aktiviert in C++17 und höher)
+        alignedNew[-]         C++17-Ausrichtung dynamisch zugeordneter Objekte aktivieren (standardmäßig aktiviert)
+        hiddenFriend[-]       Standard-C++-Regeln für ausgeblendete Freunde erzwingen
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        externC[-]            Hiermit werden Standard-C++-Regeln für 'extern "C"'-Funktionen erzwungen
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        lambda[-]             Bessere Lambdaunterstützung durch Verwendung des neueren Lambdaprozessors
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        tlsGuards[-]          Laufzeitprüfungen für die TLS-Variableninitialisierung generieren (standardmäßig aktiviert)
+        zeroSizeArrayNew[-]   Aufruf von Member "new"/"delete" für Objektarrays der Größe 0 (standardmäßig aktiviert)
+        static_assert[-]      strenge Verarbeitung von "static_assert" (standardmäßig in C++20 oder höher,
+                              impliziert durch /permissive-)
+        gotoScope[-]          kann nicht über die Initialisierung einer Variablen hinausgehen (impliziert durch /permissive-).
+        templateScope[-]      Erzwingen von Standardshadowingregeln für C++-Vorlagenparameter
+        enumTypes[-]          aktivieren zugrundeliegender Standard C++ -Enumerationstypen (standardmäßig deaktiviert)
+        checkGwOdr[-]         Standard-C++-Definitionsregelverstöße erzwingen
+                              wenn /Gw aktiviert wurde (standardmäßig deaktiviert)
+        nrvo[-]               optionale Kopier- und Verschiebungsberechtigung aktivieren (standardmäßig in C++20 oder höher,
+                              impliziert durch /permissive- oder /O2)
+        __STDC__              __STDC__ zu 1 in C definieren
+        __cplusplus[-]        __cplusplus Makro meldet den unterstützten C++-Standard (standardmäßig deaktiviert).
+        char8_t[-] die native u8-Literalunterstützung von C++20 als "const char8_t" aktivieren
+                              (standardmäßig in C++20 oder höher aktiviert)
+        externConstexpr[-]    externe Bindung für constexpr-Variablen in C++ aktivieren
+                              (standardmäßig in C++20 oder höher aktiviert, impliziert durch /permissive-)
+        preprocessor[-]       Standardkonformitätspräprozessor in C/C++ aktivieren
+                              (standardmäßig in C11 oder höher aktiviert)
+      /ZI Debuginformationen für Bearbeiten und Fortfahren aktivieren
+      /openmp OpenMP 2.0-Spracherweiterungen aktivieren
+      /openmp:experimental Aktivieren der OpenMP 2.0-Spracherweiterungen und der ausgewählten OpenMP 3.0 +-Spracherweiterungen
+      /openmp:llvm OpenMP-Spracherweiterungen unter Verwendung der LLVM-Laufzeit
+      
+                                    -VERSCHIEDENES-
+      
+      @<file> Optionsantwortdatei             /?, /help Diese Hilfemeldung anzeigen
+      /bigobj Erweitertes Objektformat generieren
+      /c Nur kompilieren, nicht verknüpfen    
+      /FC Bei Diagnose volle Pfadnamen verwenden
+      /H<num> Maximale Länge externer Namen   /J Standardzeichentyp ist "unsigned"
+      "/MP[n]" verwendet für die Kompilierung bis zu "n" Prozesse.
+      /nologo Copyright-Meldung unterdrücken  /showIncludes Includedateinamen anzeigen
+      /Tc<source file> Datei als .c-Datei kompilieren
+      /Tp<source file> Datei als CPP-Datei kompilieren
+      /TC Alle Dateien als .c-Datei kompilieren
+      /TP Alle Dateien als .cpp-Datei kompilieren
+      /V<string> Versionszeichenfolge festlegen
+      /Yc[Datei] PCH-Datei erstellen          
+      /Yd Debuginformationen in jeder OBJ-Datei ablegen
+      /Yl[sym] PCH-Verweis für Debugbibliothek einfügen
+      /Yu[Datei] PCH-Datei verwenden          /Y- Alle PCH-Optionen deaktivieren
+      /Zm<n> Maximale Speicherzuweisung (% vom Standard)
+      mit /FS die Verwendung von MSPDBSRV.EXE erzwingen
+      /source-charset:<iana-name>|.nnnn: Festlegen des Quellzeichensatzes.
+      /execution-charset:<iana-name>|.nnnn: Festlegen des Ausführungszeichensatzes.
+      /utf-8: Festlegen des Quell- und Ausführungszeichensatzes auf UTF-8
+      /validate-charset[-]: Überprüfen der UTF-8-Dateien auf zulässige Zeichen.
+      /fastfail[-]: Der Modus "fast-fail" wird aktiviert.
+      /JMC[-] Nur eigenen Code nativ aktivieren
+      /presetPadding[-] Initialisierte Auffüllung mit Nullen für stapelbasierte Klassentypen
+      /volatileMetadata[-]: Generiert Metadaten für Zugriffe auf flüchtigen Speicher.
+      /sourcelink [file] Datei, die Informationen zur Quellverknüpfung enthält
+      
+                                      -VERKNÜPFEN-
+      
+      /LD .DLL erstellen                      /LDd .DLL-Debugbibliothek erstellen
+      /LN NETMODULE erstellen                 /F<num> Stapelgröße festlegen
+      /link [Linkeroptionen und -bibliotheken]/MD Mit "MSVCRT.LIB" verknüpfen
+      /MT Mit "LIBCMT.LIB" verknüpfen         
+      /MDd Mit Debugbibliothek "MSVCRTD.LIB" verknüpfen
+      /MTd Mit Debugbibliothek "LIBCMTD.LIB" verknüpfen
+      
+                                    -CODE ANALYSIS-
+      
+      /analyze[-] Systemeigene Analyse aktivieren
+      /analyze:quiet[-] Keine Warnung an Konsole
+      /analyze:log<Name> Warnungen an Datei   
+      /analyze:autolog protokollieren in *.pftlog
+      /analyze:autolog:ext<ext> In *. protokollieren<ext>
+      /analyze:autolog- Keine Protokolldatei  
+      /analyze:WX- Warnungen nicht schwerwiegend
+      /analyze:stacksize<zahl> Max. Stapelrahmen
+      /analyze:max_paths<zahl> Max. Pfade     /analyze:Nur Analyse, keine Codegen.
+      
+                                    -DIAGNOSE-
+      
+      /diagnostics:<Argumente,...> steuert das Format von Diagnosemeldungen:
+                   classic: Behält das vorherige Format bei.
+                   column[-]: Gibt Spalteninformationen aus.
+                   caret[-]: Gibt die Spalte und die angegebene Quellcodezeile aus.
+      /Wall Alle Warnungen deaktivieren       /w   Alle Warnungen deaktivieren
+      /W<n> Warnstufe festlegen (Standard: n=1)
+      /Wv:xx[.yy[.zzzzz]] Nach Version xx.yy.zzzzz eingeführte Warnungen deaktivieren
+      /WX Warnungen als Fehler behandeln      /WL Einzeilige Diagnose aktivieren
+      /wd<n> Warnung n deaktivieren           /we<n> Warnung n als Fehler behandeln
+      /wo<n> Warnung n einmal ausgeben        /w<l><n> Warnstufe 1-4 für n festlegen
+      /external:I <Pfad>:      Speicherort für externe Header
+      /external:env:<Variable>:     Umgebungsvariable mit Speicherorten für externe Header
+      /external:anglebrackets: Alle von spitzen Klammern (<>) eingeschlossene Header werden als extern behandelt.
+      /external:W<n>:          Warnstufe für externe Header
+      /external:templates[-]: Warnstufe in der gesamten Vorlageninstanziierungskette auswerten
+      /sdl zusätzliche Sicherheitsfunktionen und Warnungen aktivieren
+      /options: Strenge unbekannte Compileroptionen stellen einen Fehler dar.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:37 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-asku22"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-asku22"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-asku22'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_16996
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_16996.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_16996.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_16996.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_16996.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_16996.exe /implib:cmTC_16996.lib /pdb:cmTC_16996.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:91 (check_include_file)"
+    checks:
+      - "Looking for arpa/inet.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbhcup"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbhcup"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_ARPA_INET_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbhcup'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a051e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a051e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_a051e.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbhcup\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_a051e.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a051e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_a051e.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbhcup\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbhcup\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "arpa/inet.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:92 (check_include_file)"
+    checks:
+      - "Looking for fcntl.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky6i15"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky6i15"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ky6i15'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_abc69
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_abc69.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_abc69.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ky6i15\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_abc69.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_abc69.dir\\CheckIncludeFile.c.obj  /out:cmTC_abc69.exe /implib:cmTC_abc69.lib /pdb:cmTC_abc69.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:93 (check_include_file)"
+    checks:
+      - "Looking for limits.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0bynob"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0bynob"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_LIMITS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0bynob'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5ef4f
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5ef4f.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_5ef4f.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0bynob\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_5ef4f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5ef4f.dir\\CheckIncludeFile.c.obj  /out:cmTC_5ef4f.exe /implib:cmTC_5ef4f.lib /pdb:cmTC_5ef4f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:94 (check_include_file)"
+    checks:
+      - "Looking for netdb.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kzspav"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kzspav"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_NETDB_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kzspav'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_07479
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_07479.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_07479.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kzspav\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_07479.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_07479.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_07479.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kzspav\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kzspav\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "netdb.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:95 (check_include_file)"
+    checks:
+      - "Looking for netinet/in.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8e5bxu"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8e5bxu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_NETINET_IN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8e5bxu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6df30
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6df30.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_6df30.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8e5bxu\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_6df30.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6df30.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_6df30.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8e5bxu\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8e5bxu\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "netinet/in.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:96 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-p1rm89"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-p1rm89"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-p1rm89'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e6459
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6459.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e6459.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-p1rm89\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e6459.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6459.dir\\CheckIncludeFile.c.obj  /out:cmTC_e6459.exe /implib:cmTC_e6459.lib /pdb:cmTC_e6459.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:97 (check_include_file)"
+    checks:
+      - "Looking for time.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-udydrb"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-udydrb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-udydrb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4f581
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4f581.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_4f581.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-udydrb\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4f581.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f581.dir\\CheckIncludeFile.c.obj  /out:cmTC_4f581.exe /implib:cmTC_4f581.lib /pdb:cmTC_4f581.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:98 (check_include_file)"
+    checks:
+      - "Looking for sys/ioctl.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sloykj"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sloykj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sloykj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5fa32
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5fa32.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_5fa32.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-sloykj\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_5fa32.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5fa32.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_5fa32.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-sloykj\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-sloykj\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "sys/ioctl.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:99 (check_include_file)"
+    checks:
+      - "Looking for sys/socket.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r9bmiv"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r9bmiv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_SOCKET_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r9bmiv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_febe5
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_febe5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_febe5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-r9bmiv\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_febe5.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_febe5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_febe5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-r9bmiv\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-r9bmiv\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "sys/socket.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:100 (check_include_file)"
+    checks:
+      - "Looking for sys/time.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-idbhns"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-idbhns"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-idbhns'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e4af7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e4af7.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e4af7.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-idbhns\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_e4af7.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e4af7.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e4af7.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-idbhns\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-idbhns\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "sys/time.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:101 (check_include_file)"
+    checks:
+      - "Looking for errno.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d5cpn2"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d5cpn2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_ERRNO_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d5cpn2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dc5fe
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_dc5fe.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_dc5fe.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-d5cpn2\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dc5fe.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dc5fe.dir\\CheckIncludeFile.c.obj  /out:cmTC_dc5fe.exe /implib:cmTC_dc5fe.lib /pdb:cmTC_dc5fe.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:102 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ofnl0t"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ofnl0t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ofnl0t'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c09f5
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c09f5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_c09f5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ofnl0t\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_c09f5.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c09f5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_c09f5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ofnl0t\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ofnl0t\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "dlfcn.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:103 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1kqhxt"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1kqhxt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1kqhxt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_0800e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_0800e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_0800e.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1kqhxt\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0800e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0800e.dir\\CheckIncludeFile.c.obj  /out:cmTC_0800e.exe /implib:cmTC_0800e.lib /pdb:cmTC_0800e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:104 (check_include_file)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wbyfrl"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wbyfrl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wbyfrl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1cc71
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1cc71.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1cc71.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-wbyfrl\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1cc71.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1cc71.dir\\CheckIncludeFile.c.obj  /out:cmTC_1cc71.exe /implib:cmTC_1cc71.lib /pdb:cmTC_1cc71.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:105 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-fu7193"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-fu7193"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-fu7193'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e5c2b
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e5c2b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e5c2b.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-fu7193\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e5c2b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e5c2b.dir\\CheckIncludeFile.c.obj  /out:cmTC_e5c2b.exe /implib:cmTC_e5c2b.lib /pdb:cmTC_e5c2b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:106 (check_include_file)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-m5841g"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-m5841g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-m5841g'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_49df1
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_49df1.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_49df1.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-m5841g\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_49df1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_49df1.dir\\CheckIncludeFile.c.obj  /out:cmTC_49df1.exe /implib:cmTC_49df1.lib /pdb:cmTC_49df1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:107 (check_include_file)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dorrxr"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dorrxr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-dorrxr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_34b2c
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_34b2c.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_34b2c.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-dorrxr\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_34b2c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_34b2c.dir\\CheckIncludeFile.c.obj  /out:cmTC_34b2c.exe /implib:cmTC_34b2c.lib /pdb:cmTC_34b2c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:108 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2zq51i"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2zq51i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2zq51i'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5a61e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5a61e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_5a61e.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2zq51i\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_5a61e.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_5a61e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_5a61e.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2zq51i\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2zq51i\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "strings.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:109 (check_include_file)"
+    checks:
+      - "Looking for sys/stat.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vjcsd2"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vjcsd2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vjcsd2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e4b58
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e4b58.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e4b58.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vjcsd2\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e4b58.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e4b58.dir\\CheckIncludeFile.c.obj  /out:cmTC_e4b58.exe /implib:cmTC_e4b58.lib /pdb:cmTC_e4b58.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:110 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0fyewq"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0fyewq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0fyewq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6bb7a
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6bb7a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_6bb7a.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0fyewq\\CheckIncludeFile.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6bb7a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6bb7a.dir\\CheckIncludeFile.c.obj  /out:cmTC_6bb7a.exe /implib:cmTC_6bb7a.lib /pdb:cmTC_6bb7a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:111 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qwian"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qwian"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8qwian'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_41e81
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_41e81.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_41e81.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8qwian\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_41e81.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_41e81.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_41e81.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8qwian\\CheckIncludeFile.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8qwian\\CheckIncludeFile.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "unistd.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:118 (check_function_exists)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sd62ra"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sd62ra"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-sd62ra'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b6fd4
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=gethostbyname /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b6fd4.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_b6fd4.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-sd62ra\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b6fd4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b6fd4.dir\\CheckFunctionExists.c.obj  /out:cmTC_b6fd4.exe /implib:cmTC_b6fd4.lib /pdb:cmTC_b6fd4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_b6fd4.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b6fd4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b6fd4.dir\\CheckFunctionExists.c.obj  /out:cmTC_b6fd4.exe /implib:cmTC_b6fd4.lib /pdb:cmTC_b6fd4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b6fd4.dir\\CheckFunctionExists.c.obj /out:cmTC_b6fd4.exe /implib:cmTC_b6fd4.lib /pdb:cmTC_b6fd4.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b6fd4.dir/intermediate.manifest CMakeFiles\\cmTC_b6fd4.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "gethostbyname" in Funktion "main".\x0d
+        cmTC_b6fd4.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:119 (check_function_exists)"
+    checks:
+      - "Looking for getaddrinfo"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5ddgr9"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5ddgr9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETADDRINFO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5ddgr9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6131f
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=getaddrinfo /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_6131f.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_6131f.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5ddgr9\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6131f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6131f.dir\\CheckFunctionExists.c.obj  /out:cmTC_6131f.exe /implib:cmTC_6131f.lib /pdb:cmTC_6131f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_6131f.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6131f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6131f.dir\\CheckFunctionExists.c.obj  /out:cmTC_6131f.exe /implib:cmTC_6131f.lib /pdb:cmTC_6131f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6131f.dir\\CheckFunctionExists.c.obj /out:cmTC_6131f.exe /implib:cmTC_6131f.lib /pdb:cmTC_6131f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6131f.dir/intermediate.manifest CMakeFiles\\cmTC_6131f.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "getaddrinfo" in Funktion "main".\x0d
+        cmTC_6131f.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:120 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ucgwpy"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ucgwpy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ucgwpy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e7db2
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=gettimeofday /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e7db2.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_e7db2.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ucgwpy\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e7db2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e7db2.dir\\CheckFunctionExists.c.obj  /out:cmTC_e7db2.exe /implib:cmTC_e7db2.lib /pdb:cmTC_e7db2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_e7db2.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e7db2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e7db2.dir\\CheckFunctionExists.c.obj  /out:cmTC_e7db2.exe /implib:cmTC_e7db2.lib /pdb:cmTC_e7db2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e7db2.dir\\CheckFunctionExists.c.obj /out:cmTC_e7db2.exe /implib:cmTC_e7db2.lib /pdb:cmTC_e7db2.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e7db2.dir/intermediate.manifest CMakeFiles\\cmTC_e7db2.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "gettimeofday" in Funktion "main".\x0d
+        cmTC_e7db2.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:121 (check_function_exists)"
+    checks:
+      - "Looking for gmtime_r"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-90he34"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-90he34"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_GMTIME_R"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-90he34'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_854c3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=gmtime_r /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_854c3.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_854c3.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-90he34\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_854c3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_854c3.dir\\CheckFunctionExists.c.obj  /out:cmTC_854c3.exe /implib:cmTC_854c3.lib /pdb:cmTC_854c3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_854c3.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_854c3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_854c3.dir\\CheckFunctionExists.c.obj  /out:cmTC_854c3.exe /implib:cmTC_854c3.lib /pdb:cmTC_854c3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_854c3.dir\\CheckFunctionExists.c.obj /out:cmTC_854c3.exe /implib:cmTC_854c3.lib /pdb:cmTC_854c3.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_854c3.dir/intermediate.manifest CMakeFiles\\cmTC_854c3.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "gmtime_r" in Funktion "main".\x0d
+        cmTC_854c3.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:122 (check_function_exists)"
+    checks:
+      - "Looking for inet_ntoa"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8wm7pj"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8wm7pj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_INET_NTOA"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-8wm7pj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a294c
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=inet_ntoa /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a294c.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_a294c.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-8wm7pj\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a294c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a294c.dir\\CheckFunctionExists.c.obj  /out:cmTC_a294c.exe /implib:cmTC_a294c.lib /pdb:cmTC_a294c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_a294c.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a294c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a294c.dir\\CheckFunctionExists.c.obj  /out:cmTC_a294c.exe /implib:cmTC_a294c.lib /pdb:cmTC_a294c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a294c.dir\\CheckFunctionExists.c.obj /out:cmTC_a294c.exe /implib:cmTC_a294c.lib /pdb:cmTC_a294c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a294c.dir/intermediate.manifest CMakeFiles\\cmTC_a294c.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "inet_ntoa" in Funktion "main".\x0d
+        cmTC_a294c.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:123 (check_function_exists)"
+    checks:
+      - "Looking for memset"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i2qww4"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i2qww4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_MEMSET"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i2qww4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_839c5
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=memset /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_839c5.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_839c5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-i2qww4\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_839c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_839c5.dir\\CheckFunctionExists.c.obj  /out:cmTC_839c5.exe /implib:cmTC_839c5.lib /pdb:cmTC_839c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:124 (check_function_exists)"
+    checks:
+      - "Looking for socket"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7rxrri"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7rxrri"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SOCKET"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7rxrri'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4ce70
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=socket /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4ce70.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_4ce70.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-7rxrri\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4ce70.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4ce70.dir\\CheckFunctionExists.c.obj  /out:cmTC_4ce70.exe /implib:cmTC_4ce70.lib /pdb:cmTC_4ce70.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_4ce70.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4ce70.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4ce70.dir\\CheckFunctionExists.c.obj  /out:cmTC_4ce70.exe /implib:cmTC_4ce70.lib /pdb:cmTC_4ce70.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4ce70.dir\\CheckFunctionExists.c.obj /out:cmTC_4ce70.exe /implib:cmTC_4ce70.lib /pdb:cmTC_4ce70.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4ce70.dir/intermediate.manifest CMakeFiles\\cmTC_4ce70.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "socket" in Funktion "main".\x0d
+        cmTC_4ce70.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:125 (check_function_exists)"
+    checks:
+      - "Looking for strftime"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gpb244"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gpb244"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_STRFTIME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gpb244'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_28c6f
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=strftime /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_28c6f.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_28c6f.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-gpb244\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_28c6f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_28c6f.dir\\CheckFunctionExists.c.obj  /out:cmTC_28c6f.exe /implib:cmTC_28c6f.lib /pdb:cmTC_28c6f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:126 (check_function_exists)"
+    checks:
+      - "Looking for __atomic_fetch_add"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1yyetd"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1yyetd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_C___ATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1yyetd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c8d4d
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=__atomic_fetch_add /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_c8d4d.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_c8d4d.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1yyetd\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8d4d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8d4d.dir\\CheckFunctionExists.c.obj  /out:cmTC_c8d4d.exe /implib:cmTC_c8d4d.lib /pdb:cmTC_c8d4d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_c8d4d.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c8d4d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8d4d.dir\\CheckFunctionExists.c.obj  /out:cmTC_c8d4d.exe /implib:cmTC_c8d4d.lib /pdb:cmTC_c8d4d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c8d4d.dir\\CheckFunctionExists.c.obj /out:cmTC_c8d4d.exe /implib:cmTC_c8d4d.lib /pdb:cmTC_c8d4d.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c8d4d.dir/intermediate.manifest CMakeFiles\\cmTC_c8d4d.dir/manifest.res" failed (exit code 1120) with the following output:
+        CheckFunctionExists.c.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "__atomic_fetch_add" in Funktion "main".\x0d
+        cmTC_c8d4d.exe : fatal error LNK1120: 1 nicht aufgelöste Externe\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:130 (check_type_size)"
+    checks:
+      - "Check size of __uint128_t"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-amu72d"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-amu72d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE___UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-amu72d'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_430e5
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_430e5.dir\\__UINT128_T.c.obj /FdCMakeFiles\\cmTC_430e5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c
+        FAILED: CMakeFiles/cmTC_430e5.dir/__UINT128_T.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_430e5.dir\\__UINT128_T.c.obj /FdCMakeFiles\\cmTC_430e5.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c(29): error C2065: "__uint128_t": nichtdeklarierter Bezeichner
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c(30): error C2065: "__uint128_t": nichtdeklarierter Bezeichner
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c(31): error C2065: "__uint128_t": nichtdeklarierter Bezeichner
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c(32): error C2065: "__uint128_t": nichtdeklarierter Bezeichner
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-amu72d\\__UINT128_T.c(33): error C2065: "__uint128_t": nichtdeklarierter Bezeichner
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:131 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lk7rqt"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lk7rqt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lk7rqt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b9660
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_b9660.dir\\SIZEOF_LONG_LONG.c.obj /FdCMakeFiles\\cmTC_b9660.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-lk7rqt\\SIZEOF_LONG_LONG.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b9660.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b9660.dir\\SIZEOF_LONG_LONG.c.obj  /out:cmTC_b9660.exe /implib:cmTC_b9660.lib /pdb:cmTC_b9660.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:132 (check_type_size)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1wyuvw"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1wyuvw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1wyuvw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7ecba
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_7ecba.dir\\SIZEOF_LONG.c.obj /FdCMakeFiles\\cmTC_7ecba.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1wyuvw\\SIZEOF_LONG.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7ecba.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7ecba.dir\\SIZEOF_LONG.c.obj  /out:cmTC_7ecba.exe /implib:cmTC_7ecba.lib /pdb:cmTC_7ecba.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:133 (check_type_size)"
+    checks:
+      - "Check size of time_t"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-51wlz3"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-51wlz3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "HAVE_SIZEOF_TIME_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-51wlz3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3b0f0
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_3b0f0.dir\\SIZEOF_TIME_T.c.obj /FdCMakeFiles\\cmTC_3b0f0.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-51wlz3\\SIZEOF_TIME_T.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3b0f0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3b0f0.dir\\SIZEOF_TIME_T.c.obj  /out:cmTC_3b0f0.exe /implib:cmTC_3b0f0.lib /pdb:cmTC_3b0f0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:167 (check_c_source_compiles)"
+    checks:
+      - "Performing Test THREAD_LS_ON"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3ysqcc"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3ysqcc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "THREAD_LS_ON"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3ysqcc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a076c
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DTHREAD_LS_ON  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a076c.dir\\src.c.obj /FdCMakeFiles\\cmTC_a076c.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-3ysqcc\\src.c
+        FAILED: CMakeFiles/cmTC_a076c.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DTHREAD_LS_ON  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a076c.dir\\src.c.obj /FdCMakeFiles\\cmTC_a076c.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-3ysqcc\\src.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-3ysqcc\\src.c(3): error C2143: Syntaxfehler: Es fehlt ";" vor "Typ"
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:167 (check_c_source_compiles)"
+    checks:
+      - "Performing Test THREAD_LS_ON"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-59ym9m"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-59ym9m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "THREAD_LS_ON"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-59ym9m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bf2b2
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DTHREAD_LS_ON  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_bf2b2.dir\\src.c.obj /FdCMakeFiles\\cmTC_bf2b2.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-59ym9m\\src.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_bf2b2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bf2b2.dir\\src.c.obj  /out:cmTC_bf2b2.exe /implib:cmTC_bf2b2.lib /pdb:cmTC_bf2b2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:184 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s0ich3"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s0ich3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s0ich3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_86fe8
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_86fe8.dir\\src.c.obj /FdCMakeFiles\\cmTC_86fe8.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-s0ich3\\src.c
+        FAILED: CMakeFiles/cmTC_86fe8.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_86fe8.dir\\src.c.obj /FdCMakeFiles\\cmTC_86fe8.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-s0ich3\\src.c
+        C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-s0ich3\\src.c(1): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "pthread.h": No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:184 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r7umu7"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r7umu7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-r7umu7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_19de7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_19de7.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_19de7.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-r7umu7\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_19de7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19de7.dir\\CheckFunctionExists.c.obj  /out:cmTC_19de7.exe /implib:cmTC_19de7.lib /pdb:cmTC_19de7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_19de7.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_19de7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19de7.dir\\CheckFunctionExists.c.obj  /out:cmTC_19de7.exe /implib:cmTC_19de7.lib /pdb:cmTC_19de7.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19de7.dir\\CheckFunctionExists.c.obj /out:cmTC_19de7.exe /implib:cmTC_19de7.lib /pdb:cmTC_19de7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_19de7.dir/intermediate.manifest CMakeFiles\\cmTC_19de7.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: Datei "pthreads.lib" kann nicht geöffnet werden.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:184 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3uzsk0"
+      binary: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3uzsk0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/nicom/Desktop/C-Web-Server/wolfssl/wolfssl-5.7.2/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3uzsk0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_034ff
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_034ff.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_034ff.dir\\ /FS -c C:\\Users\\nicom\\Desktop\\C-Web-Server\\wolfssl\\wolfssl-5.7.2\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-3uzsk0\\CheckFunctionExists.c
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_034ff.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_034ff.dir\\CheckFunctionExists.c.obj  /out:cmTC_034ff.exe /implib:cmTC_034ff.lib /pdb:cmTC_034ff.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_034ff.exe 
+        C:\\windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_034ff.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_034ff.dir\\CheckFunctionExists.c.obj  /out:cmTC_034ff.exe /implib:cmTC_034ff.lib /pdb:cmTC_034ff.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_034ff.dir\\CheckFunctionExists.c.obj /out:cmTC_034ff.exe /implib:cmTC_034ff.lib /pdb:cmTC_034ff.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_034ff.dir/intermediate.manifest CMakeFiles\\cmTC_034ff.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: Datei "pthread.lib" kann nicht geöffnet werden.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

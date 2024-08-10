@@ -15,26 +15,14 @@
 extern "C" {
 #endif
 
-#undef  WOLFSSL_HAVE_ATOMIC_H
-#define WOLFSSL_HAVE_ATOMIC_H
-
-#undef  HAVE_C___ATOMIC
-#define HAVE_C___ATOMIC 1
-
-#undef  HAVE_THREAD_LS
-#define HAVE_THREAD_LS
-
-#undef  NO_DO178
-#define NO_DO178
-
 #undef  TFM_NO_ASM
 #define TFM_NO_ASM
 
 #undef  WOLFSSL_NO_ASM
 #define WOLFSSL_NO_ASM
 
-#undef  WOLFSSL_X86_64_BUILD
-#define WOLFSSL_X86_64_BUILD
+
+
 
 #undef  SINGLE_THREADED
 #define SINGLE_THREADED
@@ -47,9 +35,6 @@ extern "C" {
 
 #undef  WC_RSA_BLINDING
 #define WC_RSA_BLINDING
-
-#undef  WOLFSSL_USE_ALIGN
-#define WOLFSSL_USE_ALIGN
 
 #undef  WOLFSSL_SHA512
 #define WOLFSSL_SHA512
@@ -65,9 +50,6 @@ extern "C" {
 
 #undef  HAVE_ECC
 #define HAVE_ECC
-
-#undef  TFM_ECC256
-#define TFM_ECC256
 
 #undef  ECC_SHAMIR
 #define ECC_SHAMIR
@@ -168,14 +150,13 @@ extern "C" {
 #undef  HAVE_TLS_EXTENSIONS
 #define HAVE_TLS_EXTENSIONS
 
-#undef  HAVE_SERVER_RENEGOTIATION_INFO
-#define HAVE_SERVER_RENEGOTIATION_INFO
+// problems with msvc:
+// #undef  HAVE___UINT128_T
+// #define HAVE___UINT128_T 1
 
-#undef  HAVE___UINT128_T
-#define HAVE___UINT128_T 1
-
-#undef  HAVE_WC_INTROSPECTION
-#define HAVE_WC_INTROSPECTION
+// problems with msvc:
+// #undef  HAVE_WC_INTROSPECTION
+// #define HAVE_WC_INTROSPECTION
 
 
 #ifdef __cplusplus
@@ -184,4 +165,3 @@ extern "C" {
 
 
 #endif /* WOLFSSL_OPTIONS_H */
-
