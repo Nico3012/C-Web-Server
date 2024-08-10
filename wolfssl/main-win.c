@@ -63,6 +63,7 @@ int main()
     }
 
 
+
     if (wolfSSL_CTX_use_certificate_buffer(ctx, certStr, strlen(certStr), SSL_FILETYPE_PEM) != SSL_SUCCESS)
     {
         error("nico error on certificate read");
@@ -160,10 +161,10 @@ int main()
 
         wolfSSL_shutdown(ssl);
         wolfSSL_free(ssl);
-        close(newsockfd);
+        closesocket(newsockfd);
     }
 
-    close(sockfd);
+    closesocket(sockfd);
     wolfSSL_CTX_free(ctx);
     wolfSSL_Cleanup();
 
