@@ -42,6 +42,4 @@
     --disable-sys-ca-certs \
     --disable-openssl-compatible-defaults \
     --enable-jobserver=no \
-    --disable-pkcs12 \
-    --disable-pkcs8 \
     --disable-makeclean

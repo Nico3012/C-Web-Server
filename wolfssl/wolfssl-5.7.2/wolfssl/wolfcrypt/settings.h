@@ -69,6 +69,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+// remove compiler and os defines:
+#include "../../../PLATFORM-COMPILER-DEFINES.h"
 // include options.h because this file holds the configurations:
 #include <wolfssl/options.h>
 

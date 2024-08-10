@@ -710,7 +710,7 @@ configure:15347: $? = 0
 configure:15347: result: yes
 configure:15353: checking for gmtime_s
 configure:15353: gcc -o conftest      conftest.c  >&5
-/usr/bin/ld: /tmp/ccKoyuyF.o: in function `main':
+/usr/bin/ld: /tmp/ccR0cEMq.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `gmtime_s'
 collect2: error: ld returned 1 exit status
 configure:15353: $? = 1
@@ -2545,7 +2545,7 @@ USE_VALGRIND_TRUE='#'
 VERSION='5.7.2'
 WOLFSENTRY_INCLUDE=''
 WOLFSENTRY_LIB=''
-WOLFSSL_BUILD_DATE='Sat, 10 Aug 2024 09:56:23 +0200'
+WOLFSSL_BUILD_DATE='Sat, 10 Aug 2024 10:46:15 +0200'
 WOLFSSL_CONFIG_ARGS=' '\''--disable-asm'\'' '\''--disable-benchmark'\'' '\''--disable-sp-asm'\'' '\''--enable-singlethreaded'\'' '\''--enable-tls13'\'' '\''--enable-curve25519'\'' '\''--enable-ed25519'\'' '\''--disable-chacha'\'' '\''--disable-dh'\'' '\''--disable-sni'\'' '\''--disable-base64encode'\'' '\''--disable-sha224'\'' '\''--disable-sha3'\'' '\''--disable-filesystem'\'' '\''--disable-examples'\'' '\''--disable-crypttests'\'' '\''--disable-pkcs12'\'' '\''--enable-pkcs8'\'' '\''--disable-openssl-compatible-defaults'\'''
 WOLFSSL_LIBRARY_VERSION='42:2:0'
 WOLFSSL_LIBRARY_VERSION_FIRST='42'
