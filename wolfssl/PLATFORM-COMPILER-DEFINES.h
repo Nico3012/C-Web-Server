@@ -1,10 +1,10 @@
 #undef __CYGWIN__
-#undef __MINGW32__
+#define __MINGW32__
 
 
 
 #undef _MSC_VER
-#undef _WIN32
+// #undef _WIN32
 
 
 
@@ -24,17 +24,6 @@
 
 
 
-#undef __CYGWIN__
-#undef __CYGWIN__
-#undef __CYGWIN__
-#undef __CYGWIN__
-#undef __CYGWIN__
-#undef __CYGWIN__
-#undef __CYGWIN__
-
-
-
-
 
 
 
@@ -49,7 +38,7 @@
 #undef __alpha__
 #undef __ia64__
 #undef _ARCH_PPC64
-#undef __x86_64__
+#define __x86_64__
 #undef __s390x__
 #undef sun
 #undef __sun
@@ -59,7 +48,7 @@
 #undef __aarch64__
 #undef __DCC__
 #undef __LP64
-#define SIZEOF_LONG 8
+// #define SIZEOF_LONG 8
 
 // undef all architecture with sizeof(long long) == 8:
 #undef __i386__
