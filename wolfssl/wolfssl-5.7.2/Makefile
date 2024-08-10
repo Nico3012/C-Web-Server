@@ -864,7 +864,7 @@ am__append_26 = src/libwolfssl.la
 ###am__append_130 = wolfcrypt/src/port/arm/armv8-32-curve25519.S \
 ###	wolfcrypt/src/port/arm/thumb2-curve25519.S \
 ###	wolfcrypt/src/port/arm/armv8-curve25519.S
-##am__append_131 = wolfcrypt/src/pwdbased.c
+###am__append_131 = wolfcrypt/src/pwdbased.c
 ####am__append_132 = wolfcrypt/src/sp_c32.c
 ####am__append_133 = wolfcrypt/src/sp_c64.c
 ####am__append_134 = wolfcrypt/src/sp_x86_64.c \
@@ -989,8 +989,8 @@ am__append_214 = wolfcrypt/src/poly1305.c
 #am__append_216 = wolfcrypt/src/arc4.c
 #am__append_217 = wolfcrypt/src/md4.c
 am__append_218 = wolfcrypt/src/md5.c
-am__append_219 = wolfcrypt/src/pwdbased.c
-am__append_220 = wolfcrypt/src/pkcs12.c
+#am__append_219 = wolfcrypt/src/pwdbased.c
+#am__append_220 = wolfcrypt/src/pkcs12.c
 #am__append_221 = wolfcrypt/src/dsa.c
 #am__append_222 = wolfcrypt/src/aes_asm.S
 ##am__append_223 = wolfcrypt/src/aes_gcm_x86_asm.S
@@ -1080,8 +1080,8 @@ am__append_275 = src/tls13.c
 #am__append_283 =  \
 #	wolfcrypt/src/port/aria/aria-crypt.c \
 #	wolfcrypt/src/port/aria/aria-cryptocb.c
-#am__append_284 = wolfcrypt/benchmark/benchmark
-#am__append_285 = wolfcrypt/benchmark/benchmark.h
+##am__append_284 = wolfcrypt/benchmark/benchmark
+##am__append_285 = wolfcrypt/benchmark/benchmark.h
 #am__append_286 = wolfcrypt/benchmark/libwolfcryptbench.la \
 #	wolfcrypt/test/libwolfcrypttest.la
 #am__append_287 = wolfcrypt/src/cryptocb.c
@@ -1123,10 +1123,10 @@ am__append_275 = src/tls13.c
 #	wolfcrypt/src/port/autosar/cryif.c
 ##am__append_301 = wolfcrypt/src/port/autosar/test.test
 ##am__append_302 = wolfcrypt/src/port/autosar/test.test
-am__append_303 = wolfcrypt/test/testwolfcrypt \
-	wolfcrypt/test/testwolfcrypt
-#am__append_304 = wolfcrypt/test/testwolfcrypt
-am__append_305 = wolfcrypt/test/test.h wolfcrypt/test/test_paths.h.in
+#am__append_303 = wolfcrypt/test/testwolfcrypt \
+#	wolfcrypt/test/testwolfcrypt
+##am__append_304 = wolfcrypt/test/testwolfcrypt
+#am__append_305 = wolfcrypt/test/test.h wolfcrypt/test/test_paths.h.in
 #am__append_306 = examples/async/async_tls.h
 ##am__append_307 = examples/async/async_client
 ##am__append_308 = examples/async/async_server
@@ -2011,13 +2011,13 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(libdir)" \
 	"$(DESTDIR)$(pkgconfigdir)" "$(DESTDIR)$(includedir)" \
 	"$(DESTDIR)$(includedir)"
 ##am__EXEEXT_1 = wolfcrypt/src/port/autosar/test.test$(EXEEXT)
-#am__EXEEXT_2 = wolfcrypt/test/testwolfcrypt$(EXEEXT)
+##am__EXEEXT_2 = wolfcrypt/test/testwolfcrypt$(EXEEXT)
 #am__EXEEXT_3 = testsuite/testsuite.test$(EXEEXT)
 #am__EXEEXT_4 =  \
 #	mcapi/test$(EXEEXT)
-#am__EXEEXT_5 = wolfcrypt/benchmark/benchmark$(EXEEXT)
-am__EXEEXT_6 = wolfcrypt/test/testwolfcrypt$(EXEEXT) \
-	wolfcrypt/test/testwolfcrypt$(EXEEXT)
+##am__EXEEXT_5 = wolfcrypt/benchmark/benchmark$(EXEEXT)
+#am__EXEEXT_6 = wolfcrypt/test/testwolfcrypt$(EXEEXT) \
+#	wolfcrypt/test/testwolfcrypt$(EXEEXT)
 ##am__EXEEXT_7 = examples/async/async_client$(EXEEXT)
 ##am__EXEEXT_8 = examples/async/async_server$(EXEEXT)
 #am__EXEEXT_9 = examples/benchmark/tls_bench$(EXEEXT)
@@ -2353,7 +2353,7 @@ am__dirstamp = $(am__leading_dot)dirstamp
 ###am__objects_104 = wolfcrypt/src/port/arm/src_libwolfssl_la-armv8-32-curve25519.lo \
 ###	wolfcrypt/src/port/arm/src_libwolfssl_la-thumb2-curve25519.lo \
 ###	wolfcrypt/src/port/arm/src_libwolfssl_la-armv8-curve25519.lo
-##am__objects_105 = wolfcrypt/src/src_libwolfssl_la-pwdbased.lo
+###am__objects_105 = wolfcrypt/src/src_libwolfssl_la-pwdbased.lo
 ####am__objects_106 = wolfcrypt/src/src_libwolfssl_la-sp_c32.lo
 ####am__objects_107 = wolfcrypt/src/src_libwolfssl_la-sp_c64.lo
 ####am__objects_108 = wolfcrypt/src/src_libwolfssl_la-sp_x86_64.lo \
@@ -2464,8 +2464,8 @@ am__objects_188 = wolfcrypt/src/src_libwolfssl_la-poly1305.lo
 #am__objects_190 = wolfcrypt/src/src_libwolfssl_la-arc4.lo
 #am__objects_191 = wolfcrypt/src/src_libwolfssl_la-md4.lo
 am__objects_192 = wolfcrypt/src/src_libwolfssl_la-md5.lo
-am__objects_193 = wolfcrypt/src/src_libwolfssl_la-pwdbased.lo
-am__objects_194 = wolfcrypt/src/src_libwolfssl_la-pkcs12.lo
+#am__objects_193 = wolfcrypt/src/src_libwolfssl_la-pwdbased.lo
+#am__objects_194 = wolfcrypt/src/src_libwolfssl_la-pkcs12.lo
 #am__objects_195 = wolfcrypt/src/src_libwolfssl_la-dsa.lo
 #am__objects_196 = wolfcrypt/src/src_libwolfssl_la-aes_asm.lo
 ##am__objects_197 = wolfcrypt/src/src_libwolfssl_la-aes_gcm_x86_asm.lo
@@ -2830,7 +2830,7 @@ testsuite_testsuite_test_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(LDFLAGS) -o $@
 am__wolfcrypt_benchmark_benchmark_SOURCES_DIST =  \
 	wolfcrypt/benchmark/benchmark.c
-#am_wolfcrypt_benchmark_benchmark_OBJECTS = wolfcrypt/benchmark/benchmark.$(OBJEXT)
+##am_wolfcrypt_benchmark_benchmark_OBJECTS = wolfcrypt/benchmark/benchmark.$(OBJEXT)
 wolfcrypt_benchmark_benchmark_OBJECTS =  \
 	$(am_wolfcrypt_benchmark_benchmark_OBJECTS)
 am__wolfcrypt_src_port_autosar_test_test_SOURCES_DIST =  \
@@ -2839,7 +2839,7 @@ am__wolfcrypt_src_port_autosar_test_test_SOURCES_DIST =  \
 wolfcrypt_src_port_autosar_test_test_OBJECTS =  \
 	$(am_wolfcrypt_src_port_autosar_test_test_OBJECTS)
 am__wolfcrypt_test_testwolfcrypt_SOURCES_DIST = wolfcrypt/test/test.c
-am_wolfcrypt_test_testwolfcrypt_OBJECTS = wolfcrypt/test/test.$(OBJEXT)
+#am_wolfcrypt_test_testwolfcrypt_OBJECTS = wolfcrypt/test/test.$(OBJEXT)
 wolfcrypt_test_testwolfcrypt_OBJECTS =  \
 	$(am_wolfcrypt_test_testwolfcrypt_OBJECTS)
 am__dist_noinst_SCRIPTS_DIST = scripts/sniffer-testsuite.test \
@@ -3745,7 +3745,7 @@ ACLOCAL = ${SHELL} '/home/nico/C-Web-Server/wolfssl/wolfssl-5.7.2/build-aux/miss
 AMINCLUDE = aminclude.am
 AMTAR = $${TAR-tar}
 AM_CCASFLAGS =  -DNDEBUG -DHAVE_CURVE25519 -DHAVE_ED25519  $(EXTRA_CCASFLAGS)
-AM_CFLAGS =  -fvisibility=hidden -DHAVE_C___ATOMIC=1 -DHAVE_THREAD_LS -DNDEBUG -DNO_DO178 -DTFM_NO_ASM -DWOLFSSL_NO_ASM -DWOLFSSL_X86_64_BUILD -DSINGLE_THREADED -DTFM_TIMING_RESISTANT -DECC_TIMING_RESISTANT -DWC_RSA_BLINDING -DWOLFSSL_USE_ALIGN -DWOLFSSL_SHA512 -DWOLFSSL_SHA384 -DHAVE_HKDF -DNO_DSA -DHAVE_ECC -DTFM_ECC256 -DECC_SHAMIR -DHAVE_CURVE25519 -DNO_OLD_TLS -DWC_RSA_PSS -DWOLFSSL_PSS_LONG_SALT -DNO_DH -DWOLFSSL_ASN_TEMPLATE -DWOLFSSL_ASN_PRINT -DWOLFSSL_NO_SHAKE128 -DWOLFSSL_NO_SHAKE256 -DHAVE_POLY1305 -DNO_CHACHA_ASM -DHAVE_HASHDRBG -DNO_FILESYSTEM -DHAVE_TLS_EXTENSIONS -DHAVE_SUPPORTED_CURVES -DHAVE_SUPPORTED_CURVES -DWOLFSSL_TLS13 -DHAVE_TLS_EXTENSIONS -DHAVE_EXTENDED_MASTER -DNO_RC4 -DHAVE_ENCRYPT_THEN_MAC -DNO_PSK -DNO_MD4 -DWC_NO_ASYNC_THREADING -DHAVE_ED25519 -DNO_DES3 -DNO_DES3_TLS_SUITES -DGCM_TABLE_4BIT -DHAVE_AESGCM -DHAVE_TLS_EXTENSIONS -DHAVE_SERVER_RENEGOTIATION_INFO -Wall -Wno-unused -O2 -DHAVE___UINT128_T=1 -DHAVE_WC_INTROSPECTION -include ./.build_params  $(EXTRA_CFLAGS)
+AM_CFLAGS =  -fvisibility=hidden -DHAVE_C___ATOMIC=1 -DHAVE_THREAD_LS -DNDEBUG -DNO_DO178 -DTFM_NO_ASM -DWOLFSSL_NO_ASM -DWOLFSSL_X86_64_BUILD -DSINGLE_THREADED -DTFM_TIMING_RESISTANT -DECC_TIMING_RESISTANT -DWC_RSA_BLINDING -DWOLFSSL_USE_ALIGN -DWOLFSSL_SHA512 -DWOLFSSL_SHA384 -DHAVE_HKDF -DNO_DSA -DHAVE_ECC -DTFM_ECC256 -DECC_SHAMIR -DHAVE_CURVE25519 -DNO_OLD_TLS -DWC_RSA_PSS -DWOLFSSL_PSS_LONG_SALT -DNO_DH -DWOLFSSL_ASN_TEMPLATE -DWOLFSSL_ASN_PRINT -DWOLFSSL_NO_SHAKE128 -DWOLFSSL_NO_SHAKE256 -DHAVE_POLY1305 -DNO_CHACHA_ASM -DHAVE_HASHDRBG -DNO_FILESYSTEM -DHAVE_TLS_EXTENSIONS -DHAVE_SUPPORTED_CURVES -DHAVE_SUPPORTED_CURVES -DWOLFSSL_TLS13 -DHAVE_TLS_EXTENSIONS -DHAVE_EXTENDED_MASTER -DNO_RC4 -DHAVE_ENCRYPT_THEN_MAC -DNO_PSK -DNO_MD4 -DNO_PKCS12 -DNO_PWDBASED -DWC_NO_ASYNC_THREADING -DHAVE_ED25519 -DNO_DES3 -DNO_DES3_TLS_SUITES -DGCM_TABLE_4BIT -DHAVE_AESGCM -DHAVE_TLS_EXTENSIONS -DHAVE_SERVER_RENEGOTIATION_INFO -Wall -Wno-unused -O2 -DHAVE___UINT128_T=1 -DHAVE_WC_INTROSPECTION -include ./.build_params  $(EXTRA_CFLAGS)
 
 # allow supplementary or override flags to be passed at make time:
 AM_CPPFLAGS =  -DWOLFSSL_HAVE_ATOMIC_H  $(EXTRA_CPPFLAGS)
@@ -3789,7 +3789,7 @@ ECHO_N = -n
 ECHO_T = 
 EGREP = /usr/bin/grep -E
 ENABLED_ASM = no
-ENABLED_CRYPT_TESTS = yes
+ENABLED_CRYPT_TESTS = no
 ENABLED_FIPS = no
 ENABLED_LINUXKM_BENCHMARKS = no
 ENABLED_LINUXKM_PIE = no
@@ -3861,8 +3861,8 @@ STRIP = strip
 VERSION = 5.7.2
 WOLFSENTRY_INCLUDE = 
 WOLFSENTRY_LIB = 
-WOLFSSL_BUILD_DATE = Sat, 10 Aug 2024 09:16:10 +0200
-WOLFSSL_CONFIG_ARGS =  '--disable-asm' '--disable-benchmark' '--disable-sp-asm' '--enable-singlethreaded' '--enable-tls13' '--enable-curve25519' '--enable-ed25519' '--disable-chacha' '--disable-dh' '--disable-sni' '--disable-base64encode' '--disable-sha224' '--disable-sha3' '--disable-filesystem'
+WOLFSSL_BUILD_DATE = Sat, 10 Aug 2024 09:56:23 +0200
+WOLFSSL_CONFIG_ARGS =  '--disable-asm' '--disable-benchmark' '--disable-sp-asm' '--enable-singlethreaded' '--enable-tls13' '--enable-curve25519' '--enable-ed25519' '--disable-chacha' '--disable-dh' '--disable-sni' '--disable-base64encode' '--disable-sha224' '--disable-sha3' '--disable-filesystem' '--disable-examples' '--disable-crypttests' '--disable-pkcs12' '--enable-pkcs8' '--disable-openssl-compatible-defaults'
 WOLFSSL_LIBRARY_VERSION = 42:2:0
 WOLFSSL_LIBRARY_VERSION_FIRST = 42
 WOLFSSL_LIBRARY_VERSION_SECOND = 2
@@ -5051,9 +5051,9 @@ src_libwolfssl_la_CFLAGS = -DBUILDING_WOLFSSL $(AM_CFLAGS) -DLIBWOLFSSL_GLOBAL_E
 src_libwolfssl_la_CPPFLAGS = -DBUILDING_WOLFSSL $(AM_CPPFLAGS)
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = support/wolfssl.pc
-#wolfcrypt_benchmark_benchmark_SOURCES = wolfcrypt/benchmark/benchmark.c
-#wolfcrypt_benchmark_benchmark_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-#wolfcrypt_benchmark_benchmark_DEPENDENCIES = src/libwolfssl.la
+##wolfcrypt_benchmark_benchmark_SOURCES = wolfcrypt/benchmark/benchmark.c
+##wolfcrypt_benchmark_benchmark_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+##wolfcrypt_benchmark_benchmark_DEPENDENCIES = src/libwolfssl.la
 #wolfcrypt_benchmark_libwolfcryptbench_la_SOURCES = wolfcrypt/benchmark/benchmark.c
 #wolfcrypt_benchmark_libwolfcryptbench_la_CPPFLAGS = -DNO_MAIN_DRIVER
 #wolfcrypt_benchmark_libwolfcryptbench_la_LIBADD = src/libwolfssl.la
@@ -5070,9 +5070,9 @@ ASYNC_FILES = \
 ##                        src/libwolfssl.la $(LIB_STATIC_ADD)
 
 ##wolfcrypt_src_port_autosar_test_test_DEPENDENCIES = src/libwolfssl.la
-wolfcrypt_test_testwolfcrypt_SOURCES = wolfcrypt/test/test.c
-wolfcrypt_test_testwolfcrypt_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
-wolfcrypt_test_testwolfcrypt_DEPENDENCIES = src/libwolfssl.la
+#wolfcrypt_test_testwolfcrypt_SOURCES = wolfcrypt/test/test.c
+#wolfcrypt_test_testwolfcrypt_LDADD = src/libwolfssl.la $(LIB_STATIC_ADD)
+#wolfcrypt_test_testwolfcrypt_DEPENDENCIES = src/libwolfssl.la
 #wolfcrypt_test_libwolfcrypttest_la_SOURCES = wolfcrypt/test/test.c
 #wolfcrypt_test_libwolfcrypttest_la_CPPFLAGS = -DNO_MAIN_DRIVER
 #wolfcrypt_test_libwolfcrypttest_la_LIBADD = src/libwolfssl.la

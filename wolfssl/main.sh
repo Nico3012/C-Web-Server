@@ -1,9 +1,33 @@
-# sudo sh main.sh
-
-# apt install libwolfssl-dev
 rm a.out
-# gcc main.c -I./wolfssl -L./wolfssl -lwolfssl
 
+cd wolfssl-5.7.2
+
+./configure \
+    --disable-asm \
+    --disable-benchmark \
+    --disable-sp-asm \
+    --enable-singlethreaded \
+    \
+    --enable-tls13 \
+    --enable-curve25519 \
+    --enable-ed25519 \
+    \
+    --disable-chacha \
+    --disable-dh \
+    \
+    --disable-sni \
+    --disable-base64encode \
+    --disable-sha224 \
+    --disable-sha3 \
+    \
+    --disable-filesystem \
+    --disable-examples \
+    --disable-crypttests \
+    --disable-pkcs12 \
+    --enable-pkcs8 \
+    --disable-openssl-compatible-defaults \
+
+cd ..
 
 gcc main-unix.c -I./wolfssl-5.7.2 \
     wolfssl-5.7.2/src/crl.c \
@@ -41,5 +65,4 @@ gcc main-unix.c -I./wolfssl-5.7.2 \
     wolfssl-5.7.2/wolfcrypt/src/wc_port.c \
     wolfssl-5.7.2/wolfcrypt/src/wolfmath.c
 
-#gcc main.c -I./wolfssl wolfssl/src/internal.c wolfssl/src/ssl.c
-#./a.out
+./a.out

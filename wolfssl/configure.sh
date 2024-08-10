@@ -1,13 +1,7 @@
 ./configure \
-    --disable-asm \
-    --disable-benchmark \
-    --disable-sp-asm \
-    --enable-singlethreaded \
-    --enable-tls13 \
-    \
-    --disable-harden \
     --disable-aescbc \
     --enable-aesgcm \
+    --disable-harden \
     \
     --disable-aligndata \
     \
@@ -44,12 +38,10 @@
     --enable-supportedcurves \
     --disable-extended-master \
     --disable-enc-then-mac \
-    --disable-pkcs12 \
-    --disable-examples \
-    --disable-crypttests \
-    --disable-pkcs8 \
     --disable-asyncthreads \
     --disable-sys-ca-certs \
     --disable-openssl-compatible-defaults \
     --enable-jobserver=no \
+    --disable-pkcs12 \
+    --disable-pkcs8 \
     --disable-makeclean

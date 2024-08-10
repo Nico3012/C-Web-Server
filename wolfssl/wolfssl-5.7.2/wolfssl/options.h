@@ -141,6 +141,12 @@ extern "C" {
 #undef  NO_MD4
 #define NO_MD4
 
+#undef  NO_PKCS12
+#define NO_PKCS12
+
+#undef  NO_PWDBASED
+#define NO_PWDBASED
+
 #undef  WC_NO_ASYNC_THREADING
 #define WC_NO_ASYNC_THREADING
 
