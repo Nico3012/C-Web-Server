@@ -65,4 +65,4 @@ gcc main-unix.c -I./wolfssl-5.7.2 \
     wolfssl-5.7.2/wolfcrypt/src/wc_port.c \
     wolfssl-5.7.2/wolfcrypt/src/wolfmath.c
 
-./a.out
+# ./a.out
