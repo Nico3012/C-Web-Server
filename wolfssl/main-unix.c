@@ -8,7 +8,6 @@
 
 #include <unistd.h>
 #include <arpa/inet.h>
-//#include <WinSock2.h>
 
 #define DEFAULT_PORT 4433
 // #define CERT_FILE "server_cert.pem"
