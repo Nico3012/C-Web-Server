@@ -5,7 +5,7 @@ rm a.out
 # gcc main.c -I./wolfssl -L./wolfssl -lwolfssl
 
 
-gcc main.c -Iwolfssl-5.7.2 \
+gcc main.c -I./wolfssl-5.7.2 \
     wolfssl-5.7.2/src/crl.c \
     wolfssl-5.7.2/src/internal.c \
     wolfssl-5.7.2/src/keys.c \

@@ -14,4 +14,6 @@
     --disable-sni \
     --disable-base64encode \
     --disable-sha224 \
-    --disable-sha3
+    --disable-sha3 \
+    \
+    --disable-filesystem

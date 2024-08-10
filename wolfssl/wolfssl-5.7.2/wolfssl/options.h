@@ -108,6 +108,9 @@ extern "C" {
 #undef  HAVE_HASHDRBG
 #define HAVE_HASHDRBG
 
+#undef  NO_FILESYSTEM
+#define NO_FILESYSTEM
+
 #undef  HAVE_TLS_EXTENSIONS
 #define HAVE_TLS_EXTENSIONS
 
@@ -140,9 +143,6 @@ extern "C" {
 
 #undef  WC_NO_ASYNC_THREADING
 #define WC_NO_ASYNC_THREADING
-
-#undef  WOLFSSL_SYS_CA_CERTS
-#define WOLFSSL_SYS_CA_CERTS
 
 #undef  HAVE_ED25519
 #define HAVE_ED25519
