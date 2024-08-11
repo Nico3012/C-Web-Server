@@ -15,6 +15,8 @@
 extern "C" {
 #endif
 
+#include <stdio.h>
+
 #undef  WOLFSSL_HAVE_ATOMIC_H
 //#define WOLFSSL_HAVE_ATOMIC_H
 
