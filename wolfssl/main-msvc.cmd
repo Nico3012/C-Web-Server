@@ -1,6 +1,6 @@
 @echo off
 
-del .\a.exe
+del .\main-win.exe
 
 start /WAIT /B cl main-win.c /FI options.h /I . /I .\wolfssl-5.7.2^
     wolfssl-5.7.2\src\crl.c^
