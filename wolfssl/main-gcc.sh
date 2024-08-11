@@ -1,6 +1,6 @@
 rm a.out
 
-gcc main-unix.c -include options.h -include undef/undef.h -I./wolfssl-5.7.2 \
+gcc main-unix.c -DWOLFSSL_USER_SETTINGS -I. -Iwolfssl-5.7.2 \
     wolfssl-5.7.2/src/crl.c \
     wolfssl-5.7.2/src/internal.c \
     wolfssl-5.7.2/src/keys.c \
