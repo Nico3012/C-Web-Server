@@ -1,6 +1,8 @@
 @echo off
+
 del .\a.exe
-start /WAIT /B cl main-win.c /I.\wolfssl-5.7.2^
+
+start /WAIT /B cl main-win.c /FI nico-options.h /I .\wolfssl-5.7.2^
     wolfssl-5.7.2\src\crl.c^
     wolfssl-5.7.2\src\internal.c^
     wolfssl-5.7.2\src\keys.c^
@@ -36,4 +38,5 @@ start /WAIT /B cl main-win.c /I.\wolfssl-5.7.2^
     wolfssl-5.7.2\wolfcrypt\src\wc_port.c^
     wolfssl-5.7.2\wolfcrypt\src\wolfmath.c^
     /link ws2_32.lib /link Advapi32.lib
+
 del *.obj

@@ -1,6 +1,8 @@
 @echo off
+
 del .\a.exe
-start /WAIT /B gcc main-win.c -I.\wolfssl-5.7.2^
+
+start /WAIT /B gcc main-win.c -include nico-options.h -I.\wolfssl-5.7.2^
     wolfssl-5.7.2\src\crl.c^
     wolfssl-5.7.2\src\internal.c^
     wolfssl-5.7.2\src\keys.c^
