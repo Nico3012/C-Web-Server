@@ -1,34 +1,5 @@
 rm a.out
 
-cd wolfssl-5.7.2
-
-./configure \
-    --disable-asm \
-    --disable-benchmark \
-    --disable-sp-asm \
-    --enable-singlethreaded \
-    \
-    --enable-tls13 \
-    --enable-curve25519 \
-    --enable-ed25519 \
-    \
-    --disable-chacha \
-    --disable-dh \
-    \
-    --disable-sni \
-    --disable-base64encode \
-    --disable-sha224 \
-    --disable-sha3 \
-    \
-    --disable-filesystem \
-    --disable-examples \
-    --disable-crypttests \
-    --disable-pkcs12 \
-    --enable-pkcs8 \
-    --disable-openssl-compatible-defaults \
-
-cd ..
-
 gcc main-unix.c -I./wolfssl-5.7.2 \
     wolfssl-5.7.2/src/crl.c \
     wolfssl-5.7.2/src/internal.c \
