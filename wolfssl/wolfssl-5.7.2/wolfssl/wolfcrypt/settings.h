@@ -52,26 +52,6 @@
     extern "C" {
 #endif
 
-// nico config:
-// include ANSI C header files:
-#include <assert.h>
-#include <ctype.h>
-#include <errno.h>
-#include <float.h>
-#include <limits.h>
-#include <locale.h>
-#include <math.h>
-#include <setjmp.h>
-#include <signal.h>
-#include <stdarg.h>
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-// include options.h because this file holds the configurations:
-#include <wolfssl/options.h>
-
 /* This flag allows wolfSSL to include options.h instead of having client
  * projects do it themselves. This should *NEVER* be defined when building
  * wolfSSL as it can cause hard to debug problems. */

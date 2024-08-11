@@ -1,9 +1,8 @@
-// #include "user_settings.h"
-#include "wolfssl-5.7.2/wolfssl/ssl.h"
+// #include "nico-options.h"
+#include <wolfssl/ssl.h>
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h> // pow and log functions
 #include <string.h>
 
 #include <unistd.h>
