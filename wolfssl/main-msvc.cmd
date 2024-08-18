@@ -2,7 +2,7 @@
 
 del .\main-win.exe
 
-start /WAIT /B cl main-win.c /D WOLFSSL_USER_SETTINGS /I . /I wolfssl-5.7.2^
+start /WAIT /B cl main-win.c /FI options.h /I configuration /I wolfssl-5.7.2^
     wolfssl-5.7.2\src\crl.c^
     wolfssl-5.7.2\src\internal.c^
     wolfssl-5.7.2\src\keys.c^

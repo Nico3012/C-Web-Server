@@ -1,6 +1,8 @@
+# apt install build-essential
+
 cd wolfssl-5.7.2
 
-./configure CFLAGS="-std=c99 -fno-builtin" \
+./configure \
     --disable-asm \
     --disable-benchmark \
     --disable-sp-asm \
@@ -12,6 +14,7 @@ cd wolfssl-5.7.2
     \
     --disable-chacha \
     --disable-dh \
+    --disable-rsa \
     \
     --disable-sni \
     --disable-base64encode \
