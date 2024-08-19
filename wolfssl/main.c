@@ -18,6 +18,10 @@ int main()
     // wolfssl memory abstraction layer:
     wolfSSL_SetAllocators(malloc, free, realloc);
 
+    // wolfssl socket io abstraction layer:
+    wolfSSL_SetIORecv(ctx, recv);
+    wolfSSL_SetIOSend(ctx, send);
+
     // initialize wolfSSL
     WOLFSSL_METHOD *method = wolfTLSv1_3_server_method();
     WOLFSSL_CTX *ctx = wolfSSL_CTX_new(method);
