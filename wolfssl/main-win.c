@@ -51,6 +51,7 @@ int my_IORecv(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
     int iResult = recv(newsockfd, buf, sz, 0);
     // Implement your custom read logic here
     // Return the number of bytes read or an error code
+    return iResult;
 }
 
 // Custom write function
@@ -58,6 +59,7 @@ int my_IOSend(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
     int iResult = send(newsockfd, buf, sz, 0);
     // Implement your custom write logic here
     // Return the number of bytes written or an error code
+    return iResult;
 }
 
 int main()
@@ -81,8 +83,9 @@ int main()
 
 
     // int sockfd, newsockfd;
-    socklen_t clilen;
-    struct sockaddr_in serv_addr, cli_addr;
+    // socklen_t clilen;
+    // struct sockaddr_in serv_addr, cli_addr;
+    struct sockaddr_in serv_addr;
     char buffer[4096];
 
     wolfSSL_Init();
@@ -95,8 +98,8 @@ int main()
 
 
     // wolfssl socket io abstraction layer:
-    wolfSSL_SetIORecv(ctx, recv);
-    wolfSSL_SetIOSend(ctx, send);
+    wolfSSL_SetIORecv(ctx, my_IORecv);
+    wolfSSL_SetIOSend(ctx, my_IOSend);
 
 
     if (wolfSSL_CTX_use_certificate_buffer(ctx, certStr, strlen(certStr), SSL_FILETYPE_PEM) != SSL_SUCCESS)
@@ -148,7 +151,7 @@ int main()
     }
 
     listen(sockfd, 5);
-    clilen = sizeof(cli_addr);
+    // clilen = sizeof(cli_addr);
 
 
 
@@ -158,7 +161,8 @@ int main()
 
     while (1)
     {
-        newsockfd = accept(sockfd, (struct sockaddr *)&cli_addr, &clilen);
+        newsockfd = accept(sockfd, NULL, NULL);
+        // newsockfd = accept(sockfd, (struct sockaddr *)&cli_addr, &clilen);
         if (newsockfd < 0)
         {
             error("ERROR on accept");

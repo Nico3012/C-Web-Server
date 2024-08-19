@@ -48,6 +48,7 @@ int my_IORecv(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
     int iResult = recv(newsockfd, buf, sz, 0);
     // Implement your custom read logic here
     // Return the number of bytes read or an error code
+    return iResult;
 }
 
 // Custom write function
@@ -55,6 +56,7 @@ int my_IOSend(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
     int iResult = send(newsockfd, buf, sz, 0);
     // Implement your custom write logic here
     // Return the number of bytes written or an error code
+    return iResult;
 }
 
 int main()
