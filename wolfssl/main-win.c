@@ -32,14 +32,45 @@ void error(const char *msg)
     exit(1);
 }
 
+SOCKET newsockfd;
+SOCKET sockfd;
+
+
+// strg c interrupt to use
+#include <signal.h>
+void releaseFn() {
+    closesocket(sockfd);
+    // wolfSSL_CTX_free(ctx);
+    wolfSSL_Cleanup();
+    printf("cleaned\n");
+}
+
+
+// Custom read function
+int my_IORecv(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
+    int iResult = recv(newsockfd, buf, sz, 0);
+    // Implement your custom read logic here
+    // Return the number of bytes read or an error code
+}
+
+// Custom write function
+int my_IOSend(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
+    int iResult = send(newsockfd, buf, sz, 0);
+    // Implement your custom write logic here
+    // Return the number of bytes written or an error code
+}
+
 int main()
 {
+    // strg c interupt linux:
+    signal(SIGINT, releaseFn);
+
+    // wolfssl memory abstraction layer:
+    wolfSSL_SetAllocators(malloc, free, realloc);
+
     // initialize variables
     int iResult;
     WSADATA wsaData;
-    SOCKET sockfd;
-    SOCKET newsockfd;
-
     // init Winsock
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (iResult != NO_ERROR)
@@ -62,6 +93,10 @@ int main()
         error("wolfSSL_CTX_new error");
     }
 
+
+    // wolfssl socket io abstraction layer:
+    wolfSSL_SetIORecv(ctx, recv);
+    wolfSSL_SetIOSend(ctx, send);
 
 
     if (wolfSSL_CTX_use_certificate_buffer(ctx, certStr, strlen(certStr), SSL_FILETYPE_PEM) != SSL_SUCCESS)

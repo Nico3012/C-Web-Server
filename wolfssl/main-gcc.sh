@@ -27,7 +27,6 @@ gcc main-unix.c -includeoptions.h -Iconfiguration -Iwolfssl-5.7.2 \
     wolfssl-5.7.2/wolfcrypt/src/memory.c \
     wolfssl-5.7.2/wolfcrypt/src/pwdbased.c \
     wolfssl-5.7.2/wolfcrypt/src/random.c \
-    wolfssl-5.7.2/wolfcrypt/src/rsa.c \
     wolfssl-5.7.2/wolfcrypt/src/sha.c \
     wolfssl-5.7.2/wolfcrypt/src/sha256.c \
     wolfssl-5.7.2/wolfcrypt/src/sha512.c \

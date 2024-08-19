@@ -21,6 +21,11 @@ extern "C" {
 // #undef  HAVE_C___ATOMIC
 // #define HAVE_C___ATOMIC 1
 
+
+#define WOLFSSL_NO_SOCK
+#define WOLFSSL_USER_IO
+
+
 #undef  HAVE_THREAD_LS
 #define HAVE_THREAD_LS
 

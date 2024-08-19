@@ -22,8 +22,17 @@ const char* certStr = "-----BEGIN CERTIFICATE-----\nMIIBejCCASCgAwIBAgIRALiXDPnd
 const char* keyStr = "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg4qOVE+o6+RFVDFzJ\nHsP4yOsRRSUtW1pylj6EdB3c8xahRANCAATfZhMb2pN7SDR9BtL9ar0+4rpHW0B5\nyu6BgbOJQ9pxoBUjCmPt4f2PWv9voarhdJuPv9YF8Ni0GA3cq4goy9hn\n-----END PRIVATE KEY-----\n";
 
 
+int sockfd, newsockfd;
 
 
+// strg c interrupt to use
+#include <signal.h>
+void releaseFn() {
+    close(sockfd);
+    // wolfSSL_CTX_free(ctx);
+    wolfSSL_Cleanup();
+    printf("cleaned\n");
+}
 
 
 
@@ -34,9 +43,29 @@ void error(const char *msg)
     exit(1);
 }
 
+// Custom read function
+int my_IORecv(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
+    int iResult = recv(newsockfd, buf, sz, 0);
+    // Implement your custom read logic here
+    // Return the number of bytes read or an error code
+}
+
+// Custom write function
+int my_IOSend(WOLFSSL *ssl, char *buf, int sz, void *ctx) {
+    int iResult = send(newsockfd, buf, sz, 0);
+    // Implement your custom write logic here
+    // Return the number of bytes written or an error code
+}
+
 int main()
 {
-    int sockfd, newsockfd;
+    // strg c interupt:
+    signal(SIGINT, releaseFn);
+
+    // wolfssl memory abstraction layer:
+    wolfSSL_SetAllocators(malloc, free, realloc);
+
+    // int sockfd, newsockfd;
     socklen_t clilen;
     struct sockaddr_in serv_addr, cli_addr;
     char buffer[4096];
@@ -49,6 +78,9 @@ int main()
         error("wolfSSL_CTX_new error");
     }
 
+    // wolfssl socket io abstraction layer:
+    wolfSSL_SetIORecv(ctx, my_IORecv);
+    wolfSSL_SetIOSend(ctx, my_IOSend);
 
     if (wolfSSL_CTX_use_certificate_buffer(ctx, certStr, strlen(certStr), SSL_FILETYPE_PEM) != SSL_SUCCESS)
     {
