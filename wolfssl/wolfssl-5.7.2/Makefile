@@ -3764,9 +3764,9 @@ AWK = gawk
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS =   
+CCASFLAGS = -std=c89  
 CCDEPMODE = depmode=gcc3
-CFLAGS =    -Wno-pragmas -Wall -Wextra -Wunknown-pragmas --param=ssp-buffer-size=1 -Waddress -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wstrict-prototypes -Wswitch-enum -Wundef -Wunused -Wunused-result -Wunused-variable -Wwrite-strings -fwrapv
+CFLAGS = -std=c89   -Wno-pragmas -Wall -Wextra -Wunknown-pragmas --param=ssp-buffer-size=1 -Waddress -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wstrict-prototypes -Wswitch-enum -Wundef -Wunused -Wunused-result -Wunused-variable -Wwrite-strings -fwrapv
 CFLAGS_AUTO_VECTORIZE_DISABLE = 
 CFLAGS_AUTO_VECTORIZE_ENABLE = 
 CFLAGS_FPU_DISABLE = 
@@ -3861,8 +3861,8 @@ STRIP = strip
 VERSION = 5.7.2
 WOLFSENTRY_INCLUDE = 
 WOLFSENTRY_LIB = 
-WOLFSSL_BUILD_DATE = Sun, 18 Aug 2024 21:08:44 +0200
-WOLFSSL_CONFIG_ARGS =  '--disable-asm' '--disable-benchmark' '--disable-sp-asm' '--enable-singlethreaded' '--enable-tls13' '--enable-curve25519' '--enable-ed25519' '--disable-chacha' '--disable-dh' '--disable-rsa' '--disable-sni' '--disable-base64encode' '--disable-sha224' '--disable-sha3' '--disable-filesystem' '--disable-examples' '--disable-crypttests' '--disable-pkcs12' '--enable-pkcs8' '--disable-openssl-compatible-defaults' '--disable-fastmath' '--disable-fasthugemath'
+WOLFSSL_BUILD_DATE = Tue, 20 Aug 2024 21:02:19 +0200
+WOLFSSL_CONFIG_ARGS =  'CFLAGS=-std=c89' '--disable-asm' '--disable-benchmark' '--disable-sp-asm' '--enable-singlethreaded' '--enable-tls13' '--enable-curve25519' '--enable-ed25519' '--disable-chacha' '--disable-dh' '--disable-rsa' '--disable-sni' '--disable-base64encode' '--disable-sha224' '--disable-sha3' '--disable-filesystem' '--disable-examples' '--disable-crypttests' '--disable-pkcs12' '--enable-pkcs8' '--disable-openssl-compatible-defaults' '--disable-fastmath' '--disable-fasthugemath'
 WOLFSSL_LIBRARY_VERSION = 42:2:0
 WOLFSSL_LIBRARY_VERSION_FIRST = 42
 WOLFSSL_LIBRARY_VERSION_SECOND = 2

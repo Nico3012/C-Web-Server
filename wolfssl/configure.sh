@@ -2,7 +2,7 @@
 
 cd wolfssl-5.7.2
 
-./configure \
+./configure CFLAGS="-std=c89" \
     --disable-asm \
     --disable-benchmark \
     --disable-sp-asm \

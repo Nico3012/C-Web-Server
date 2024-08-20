@@ -22,7 +22,7 @@
 
 /* Define to 1 if you have the declaration of `getaddrinfo', and to 0 if you
    don't. */
-#define HAVE_DECL_GETADDRINFO 1
+#define HAVE_DECL_GETADDRINFO 0
 
 /* Define to 1 if you have the declaration of `gethostbyname', and to 0 if you
    don't. */
@@ -34,7 +34,7 @@
 
 /* Define to 1 if you have the declaration of `gmtime_r', and to 0 if you
    don't. */
-#define HAVE_DECL_GMTIME_R 1
+#define HAVE_DECL_GMTIME_R 0
 
 /* Define to 1 if you have the declaration of `gmtime_s', and to 0 if you
    don't. */
@@ -66,7 +66,7 @@
 #define HAVE_FCNTL_H 1
 
 /* Define to 1 if you have the `getaddrinfo' function. */
-#define HAVE_GETADDRINFO 1
+/* #undef HAVE_GETADDRINFO */
 
 /* Define to 1 if you have the `gethostbyname' function. */
 #define HAVE_GETHOSTBYNAME 1
@@ -75,7 +75,7 @@
 #define HAVE_GETTIMEOFDAY 1
 
 /* Define to 1 if you have the `gmtime_r' function. */
-#define HAVE_GMTIME_R 1
+/* #undef HAVE_GMTIME_R */
 
 /* Define to 1 if you have the `gmtime_s' function. */
 /* #undef HAVE_GMTIME_S */
