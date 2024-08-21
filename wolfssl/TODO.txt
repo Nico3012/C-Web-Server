@@ -1,0 +1,5 @@
+Programm suchen, welches statische codeanalyse durchführt und konformität des codes prüft.
+Damit muss die Wolfssl bibliothek überprüft werden
+
+portablester C Standard: ANSI bzw. C89/C90
+portabelster C++ Standard: C++11
